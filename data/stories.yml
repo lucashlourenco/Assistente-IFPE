@@ -1,0 +1,12 @@
+version: "3.1"
+
+stories:
+
+- story: informacao com sucesso
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: email_direcao
+  - action: utter_email_direcao
+  - intent: agradecimento
+  - action: utter_agradecimento

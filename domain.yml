@@ -1,0 +1,347 @@
+version: "3.1"
+
+intents:
+  - saudar
+  - sobre
+  - afirmacao
+  - negacao
+  - agradecimento
+  - email_direcao
+  - contatos
+  - div_pesquisa
+  - coord_ads
+  - primeiro_acesso_qacademico
+  - obter_matricula
+  - email_incorreto_qacademico
+  - criar_email_institucional
+  - problema_email_institucional
+  - perguntar_ferias
+  - perguntar_inicio_semestre
+  - perguntar_matricula_veteranos
+  - perguntar_matricula_novatos
+  - solicitar_reabertura_matricula
+  - solicitar_trancamento_matricula
+  - modificacao_matricula
+  - aproveitamento_disciplinas
+  - perguntar_feriado
+  - perguntar_avaliacoes_unidades
+  - perguntar_conselho_classe
+  - perguntar_semanas_especiais
+  - perguntar_provas_finais
+  - perguntar_ferias_docentes
+  - perguntar_encontro_pedagogico
+  - perguntar_dias_letivos
+  - perguntar_sabadost_letivos
+  - alterar_matricula
+  - trancar_matricula
+  - cancelar_matricula
+  - aproveitamento_disciplinas_isencao
+  - emitir_documentos
+  - solicitar_diploma
+  - contato_duvidas
+  - programa_monitoria
+  - edital_monitoria
+  - contato_monitoria
+  - carteira_estudantil
+  - contato_carteira_estudantil
+  - acompanhamento_psicossocial
+  - quem_tem_direito_psicossocial
+  - setores_acompanhamento_psicossocial
+  - direitos_discentes
+  - dias_letivos_garantidos
+  - nao_discriminacao
+  - uso_servicos_especializados
+  - procedimentos_matricula_direitos
+  - auxilio_bolsas_assistencia
+  - dificuldades_e_sugestoes
+  - deveres_discentes
+  - conduta_etica
+  - cumprimento_normas_calendario
+  - contato_departamento_coordenacao
+  - tratamento_comunidade_academica
+  - codigo_matricula
+  - empenho_aproveitamento
+  - assiduidade_pontualidade
+  - justificativa_ausencia
+  - conhecimento_medias_notas
+  - uso_uniforme
+  - ambientes_limpos
+  - proibicoes_discentes
+  - proibido_faltas_coletivas
+  - proibido_aparelho_eletronico
+  - proibido_arrecadar_dinheiro
+  - proibido_equipamento_instituicao
+  - proibido_publicacao_midia
+  - proibido_desordem_assedio
+  - proibido_palavras_obscenidades
+  - proibido_substancias_perigosas
+  - proibido_facilitar_entrada_perigo
+  - regime_disciplinar_discente
+  - representantes_turmas
+
+responses:
+  utter_saudar:
+  - text: "Oi, meu nome é Lucas, serei seu assistente. Como posso ajudar?"
+  - text: "E aí, meu nome é Lucas, no que eu posso te ajudar?"
+
+  utter_sobre:
+  - text: "Me chamo Lucas, sou o assistente virtual do campus. Fui criado por Lucas Lourenço com a orientação do professor Luciano Cabral para ajudar fornecendo informações úteis de forma simples e intuitiva."
+
+  utter_afirmacao:
+  - text: "Ótimo! Até a próxima."
+
+  utter_negacao:
+  - text: "O que você quer saber?"
+
+  utter_agradecimento:
+  - text: "Por nada, é um prazer ajudar!"
+
+  utter_email_direcao:
+  - text: "O email da direção de ensino é: den@jaboatao.ifpe.edu.br, isso te ajudou?"
+
+  utter_contatos:
+  - text: "DIREÇÃO DE ENSINO - den@jaboatao.ifpe.edu.br
+      DIVISÃO DE PESQUISA E EXTENSÃO - dpex@jaboatao.ifpe.edu.br
+      COORDENAÇÃO DO TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - coordenacao.ads@jaboatao.ifpe.edu.br
+      COORDENAÇÃO DO TÉCNICO EM INFORMÁTICA PARA INTERNET - cipi@jaboatao.ifpe.edu.br
+      COORDENAÇÃO DO TÉCNICO EM QUALIDADE - cctq@jaboatao.ifpe.edu.br
+      COORDENAÇÃO DO TÉCNICO EM ADMINISTRAÇÃO - 
+      COORDENAÇÃO DO TÉCNICO EM COMÉRCIO - 
+      CRADT (Secretaria) - atendimento.secretaria@jaboatao.ifpe.edu.br
+      BIBLIOTECA  - biblioteca@jaboatao.ifpe.edu.br
+      COORDENADORIA DE RELAÇÕES EMPRESARIAIS, ESTÁGIOS E EGRESSOS - cree@jaboatao.ifpe.edu.br 
+      COORDENADORIA DE MONITORIA - monitoria@jaboatao.ifpe.edu.br 
+      DIVISÃO DE ASSISTÊNCIA AO ENSINO E AO ESTUDANTE - daee@jaboatao.ifpe.edu.br
+      Sobre Carteira Estudantil: carteiraestudante@jaboatao.ifpe.edu.br 
+      COORDENADORIA DE PSICOLOGIA - anamelia.mello@jaboatao.ifpe.edu.br
+      PEDAGOGAS- adriana.assis@jaboatao.ifpe.edu.br  e graciele.gomes@jaboatao.ifpe.edu.br
+      ASSESSORIA DE COMUNICAÇÃO - ascom@jaboatao.ifpe.edu.br
+      Fonte: https://sites.google.com/jaboatao.ifpe.edu.br/ensino/nossos-contatos"
+
+  utter_div_pesquisa:
+  - text: "O e-mail da Divisão de Pesquisa e extensão é: dpex@jaboatao.ifpe.edu.br"
+
+  utter_coord_ads:
+  - text: "O e-mail da coordenação do curso de Tecnologia em Análise e Desenvolvimento de Sistemas é: ads@jaboatao.ifpe.edu.br"
+
+  utter_primeiro_acesso_qacademico:
+    - text: "Para o primeiro acesso ou recuperação de senha do QAcademico, acesse [https://qacademico.ifpe.edu.br/](https://qacademico.ifpe.edu.br/). Vá no menu 'Aluno' e depois clique em 'Primeiro acesso e recuperação de senha'. A senha será enviada para o e-mail cadastrado na matrícula."
+    - text: "Para criar sua senha ou recuperar o acesso ao QAcademico, entre em [https://qacademico.ifpe.edu.br/](https://qacademico.ifpe.edu.br/). Clique em 'Primeiro acesso e recuperação de senha' no menu 'Aluno'."
+
+  utter_obter_matricula:
+    - text: "Você pode obter sua matrícula com a CRADT ou com a Coordenação do seu curso. Precisa dos contatos deles?"
+
+  utter_email_incorreto_qacademico:
+    - text: "Se o e-mail cadastrado no QAcademico estiver errado ou você não recebeu a senha, envie um e-mail para atendimento.secretaria@jaboatao.ifpe.edu.br informando seu número de matrícula e o e-mail correto."
+    - text: "Caso seu e-mail no QAcademico esteja incorreto, envie um e-mail com sua matrícula e o e-mail certo para atendimento.secretaria@jaboatao.ifpe.edu.br."
+
+  utter_criar_email_institucional:
+    - text: "Para criar seu e-mail institucional, acesse [https://meuemail.ifpe.edu.br/estudantes/](https://meuemail.ifpe.edu.br/estudantes/). Use sua matrícula e senha do QAcademico para o acesso."
+    - text: "Você pode criar seu e-mail institucional em [https://meuemail.ifpe.edu.br/estudantes/](https://meuemail.ifpe.edu.br/estudantes/), utilizando os dados de login do QAcademico."
+
+  utter_problema_email_institucional:
+    - text: "Se você já tem um e-mail institucional do IFPE de outro curso ou não consegue criar por outro motivo, envie um e-mail para cadt@reitoria.ifpe.edu.br."
+    - text: "Em caso de problemas para criar seu e-mail institucional (ex: já possui um de outro curso), entre em contato com cadt@reitoria.ifpe.edu.br."
+  
+  utter_ferias:
+    - text: "As férias docentes e discentes de 2025.1 são de 5 a 25 de julho. As férias docentes de 2025.2 são de 12 a 31 de janeiro de 2026."
+    - text: "Temos férias docentes de 24 de fevereiro a 19 de março de 2025 e de 31 de julho a 20 de agosto de 2025. As férias discentes coincidem com o período de 5 a 25 de julho. Em janeiro de 2026, as férias docentes e discentes vão de 12 a 31." 
+
+  utter_inicio_semestre:
+    - text: "O início do semestre letivo 2025.1 para Novatos, com Aula Inaugural e acolhimento, é em 20 de março. Para Veteranos, o início é em 24 de março. Já o Semestre 2025.2 para Novatos inicia em 27 de agosto, com Aula Inaugural. Os Veteranos iniciam o semestre 2025.2 em 28 de agosto."
+
+  utter_matricula_veteranos:
+    - text: "A Matrícula Obrigatória dos Veteranos para 2025.1 é online, via QAcademico, de 12 a 18 de março." 
+
+  utter_matricula_novatos:
+    - text: "A Matrícula dos Novatos 2025.1 acontece conforme publicação do Edital de Matrícula, em data a ser estabelecida por edital sistêmico." 
+
+  utter_solicitar_reabertura_matricula:
+    - text: "A solicitação de reabertura de matrícula para o semestre 2025.1 é de 17 a 27 de fevereiro."
+
+  utter_solicitar_trancamento_matricula:
+    - text: "O período para solicitar trancamento de matrícula para 2025.1 é de 20 de março a 16 de abril." 
+
+  utter_modificacao_matricula:
+    - text: "O período para modificação de matrícula para 2025.1 é de 20 a 27 de março." 
+
+  utter_aproveitamento_disciplinas:
+    - text: "Você pode solicitar aproveitamento de disciplinas de 21 a 31 de março." 
+
+  utter_feriado:
+    - text: "Alguns feriados importantes em 2025 são: Tiradentes em 21 de abril, Dia do Trabalhador em 1º de maio, São João em 24 de junho, Dia da Independência do Brasil em 7 de setembro, Proclamação da República em 15 de novembro, Consciência Negra em 20 de novembro, e Natal em 25 de dezembro." 
+    - text: "Em abril, temos Recesso de Semana Santa (17 e 18) e Feriado Nacional de Tiradentes (21). Em maio, o Dia do Trabalhador (1º) é feriado.  Junho, Recesso Junino (23) e Feriado de São João (24). Em setembro, Feriado do Dia da Independência (7). Em outubro, Feriado de Nossa Senhora Aparecida (12). Em novembro, Feriado da Proclamação da República (15) e Consciência Negra (20). Em dezembro, Recesso Natalino (24) e Feriado de Natal (25). Em janeiro de 2026, Confraternização Universal (1º)."
+
+  utter_avaliacoes_unidades:
+    - text: "O período de avaliações da 1ª unidade é de 12 a 17 de maio, com término da unidade em 24 de maio e prazo final para publicação de notas no Q-Acadêmico em 26 de maio. A 2ª unidade tem período de avaliações de 14 a 18 de julho e término em 29 de julho, com prazo final para notas em 30 de julho. O término da 3ª unidade do Ensino Médio é em 18 de outubro, com prazo final para publicação de notas no Q-Acadêmico no mesmo dia. O término da 4ª unidade é em 29 de dezembro, e o ano letivo termina em 30 de dezembro, com prazo final para publicação das notas no Q-Acadêmico." 
+
+  utter_conselho_classe:
+    - text: "Os Conselhos de Classe da 1ª Unidade são de 9 a 13 de junho. Os Conselhos de Classe da 2ª Unidade são em 30 e 31 de julho, e 1º de agosto. O Conselho de Classe do Ensino Médio para a 3ª Unidade é de 3 a 5 de novembro. Os Conselhos de Classe do 4º Período são em 8 e 9 de janeiro de 2026." 
+
+  utter_semanas_especiais:
+    - text: "Algumas semanas e datas especiais incluem: Semana de Conscientização do Autismo (1 a 4 de abril), Semana dos Povos Originários (14 a 16 de abril), Semana de Administração e Tecnologia da Informação (9 a 13 de junho), Dia Internacional do Orgulho LGBTQIA+ (28 de junho), Dia da Mulher Negra Latinoamericana e Caribenha (25 de julho), Dia da Pessoa com Deficiência (21 de setembro),  Nacional de Ciência e Tecnologia (13 a 17 de outubro), Semana da Consciência Negra (17 a 21 de novembro), e Semana de Arte e Cultura (8 a 12 de dezembro)."
+
+  utter_provas_finais:
+    - text: "As Provas Finais ocorrem de 2 a 7 de janeiro de 2026. O prazo final para publicação das notas dos Exames Finais é 7 de janeiro de 2026." 
+
+  utter_ferias_docentes:
+    - text: "As férias docentes são de 24 de fevereiro a 19 de março (1ª parte) e de 5 a 25 de julho (2ª parte). Em janeiro de 2026, as férias docentes vão de 12 a 31."
+
+  utter_encontro_pedagogico:
+    - text: "O Encontro Pedagógico 2025.1 para docentes e administrativo é em 20 de março. A Reunião de Planejamento para docentes de 2025.1 também é em 20 de março. O Encontro Pedagógico 2025.2 é em 26 de agosto, com Reunião de Planejamento para docentes. "
+
+  utter_dias_letivos:
+    - text: "Em março de 2025, há 8 dias letivos. Em abril, 21 dias letivos. Maio tem 26 dias letivos. Junho tem 22 dias letivos. Julho tem 23 dias letivos. Agosto tem 4 dias letivos. Setembro tem 26 dias letivos. Outubro tem 26 dias letivos. Novembro tem 23 dias letivos. Dezembro tem 21 dias letivos. Janeiro de 2026 tem 0 dias letivos."
+
+  utter_sabadost_letivos:
+    - text: "Há vários sábados letivos em 2025.1 para compensação. Alguns exemplos incluem: 29 de março (referente a uma segunda-feira), 5 de abril (ref. a uma terça-feira), 12 de abril (ref. a uma quarta-feira), 26 de abril (ref. a uma quinta-feira), 3 de maio (ref. a uma sexta-feira), 10 de maio (ref. a uma segunda-feira), 24 de maio (ref. a uma quinta-feira), 31 de maio (ref. a uma sexta-feira), 7 de junho (ref. a uma segunda-feira), 14 de junho (ref. a uma quinta-feira), 21 de junho (ref. a uma segunda-feira), 28 de junho (ref. a uma quinta-feira), 5 de julho (ref. a uma terça-feira), 12 de julho (ref. a uma quarta-feira), 19 de julho (ref. a uma quinta-feira), 26 de julho (ref. a uma sexta-feira)."
+
+  utter_alterar_matricula:
+    - text: "Durante o período de modificação, você pode alterar sua matrícula (incluir/retirar disciplinas) diretamente no QAcademico. Após esse período, será necessário preencher um REQUERIMENTO PADRÃO e ele será analisado pela Coordenação de curso. Atenção: estudantes do primeiro período não têm direito a trancamento de componentes curriculares (Art. 94 da Organização Acadêmica)."
+
+  utter_trancar_matricula:
+    - text: "Qualquer estudante tem direito ao trancamento de matrícula por até 2 anos. Isso suspende sua matrícula até que você solicite a reabertura. Importante: estudantes do primeiro período não têm direito a trancamento de matrícula (Art. 94 da Organização Acadêmica), e estudantes com matrícula trancada não podem participar de atividades acadêmicas ou programas de Assistência Estudantil."
+
+  utter_cancelar_matricula:
+    - text: "Para cancelar sua matrícula permanentemente e desvincular-se do curso: Se for menor de idade, o cancelamento só pode ser feito presencialmente. Para os demais, é preciso enviar o REQUERIMENTO PADRÃO preenchido e assinado, anexando um documento oficial escaneado."
+
+  utter_aproveitamento_disciplinas_isencao:
+    - text: "Para solicitar aproveitamento de disciplinas/isenção, você deve enviar o REQUERIMENTO PADRÃO preenchido, o histórico escolar do curso de origem (com aprovação na disciplina), a matriz curricular do curso de origem e os programas curriculares (ementas) das disciplinas cursadas. As ementas estão disponíveis no site do IFPE, basta baixar o PPC do seu curso em https://www.ifpe.edu.br/campus/jaboatao/cursos."
+
+  utter_emitir_documentos:
+    - text: "Você pode emitir seu Histórico Escolar e Comprovante de Matrícula diretamente pelo QAcademico."
+
+  utter_solicitar_diploma:
+    - text: "Para solicitar seu diploma, você deve entregar os seguintes documentos: cópias do RG, CPF, Certidão de Nascimento ou Casamento, a Declaração de Nada Consta da Biblioteca (que você pode solicitar em biblioteca@jaboatao.ifpe.edu.br), e o Requerimento Estudantil preenchido."
+  
+  utter_contato_duvidas:
+    - text: "Em caso de dúvidas, você pode enviar um e-mail para atendimento.secretaria@jaboatao.ifpe.edu.br."
+    - text: "Se tiver dúvidas e precisar de ajuda, o e-mail para contato é atendimento.secretaria@jaboatao.ifpe.edu.br."
+    - text: "Para qualquer dúvida, não hesite em enviar um e-mail para atendimento.secretaria@jaboatao.ifpe.edu.br."
+
+  utter_programa_monitoria:
+    - text: "O Programa Institucional de Monitoria do IFPE Campus Jaboatão oferece oportunidades para os alunos atuarem como monitores em diversas disciplinas, auxiliando outros estudantes e aprimorando seus conhecimentos."
+
+  utter_edital_monitoria:
+    - text: "O Edital de Monitoria para 2025.1 é a sua referência principal para se candidatar ao programa. Você pode procurar por ele nos comunicados e editais do campus."
+    - text: "Para informações sobre como participar do Programa de Monitoria, consulte o Edital de Monitoria 2025.1."
+
+  utter_contato_monitoria:
+    - text: "Para entrar em contato com a coordenação de monitoria, envie um e-mail para monitoria@jaboatao.ifpe.edu.br."
+    - text: "Se tiver dúvidas específicas sobre o programa ou edital de monitoria, o e-mail da coordenação é monitoria@jaboatao.ifpe.edu.br."
+
+  utter_carteira_estudantil:
+    - text: "Para emissão de sua Carteira de Identificação Estudantil, acesse o site do Grande Recife e siga os passos: https://www.granderecife.pe.gov.br/sitegrctm/servicos/carteira-de-identificacao-estudantil/."
+    - text: "Sua Carteira de Identificação Estudantil pode ser emitida seguindo os passos no site do Grande Recife: https://www.granderecife.pe.gov.br/sitegrctm/servicos/carteira-de-identificacao-estudantil/."
+
+  utter_contato_carteira_estudantil:
+    - text: "Em caso de dúvidas sobre a Carteira Estudantil, entre em contato com o setor responsável pelo e-mail carteiraestudante@jaboatao.ifpe.edu.br."
+    - text: "Para questões relacionadas à Carteira Estudantil, o contato é carteiraestudante@jaboatao.ifpe.edu.br."
+
+  utter_acompanhamento_psicossocial:
+    - text: "O Programa de Acompanhamento Psicossocial compreende ações de acompanhamento psicológico, orientação pedagógica e social, campanhas educativas, atendimento ambulatorial, assistência médico-odontológica e orientação nutricional aos estudantes. Campi sem esses serviços podem buscar apoio nas redes estadual e municipal de saúde."
+    - text: "O Acompanhamento Psicossocial oferece diversos serviços como apoio psicológico, orientação pedagógica e social, e até assistência médico-odontológica e nutricional. Para atendimentos prolongados, os estudantes são encaminhados à rede de referência do Estado."
+
+  utter_quem_tem_direito_psicossocial:
+    - text: "As ações do Programa de Acompanhamento Psicossocial são destinadas a todos os estudantes do IFPE, a qualquer momento do ano letivo."
+
+  utter_setores_acompanhamento_psicossocial:
+    - text: "Para o Acompanhamento Psicossocial, você pode procurar o Serviço Social (atendimentosocial@jaboatao.ifpe.edu.br) ou a Psicologia (anamelia.mello@jaboatao.ifpe.edu.br)."
+    - text: "Os setores responsáveis pelo Acompanhamento Psicossocial são o Serviço Social, através do e-mail atendimentosocial@jaboatao.ifpe.edu.br, e a Psicologia, pelo e-mail anamelia.mello@jaboatao.ifpe.edu.br."
+
+  utter_direitos_discentes:
+    - text: "Sim, o Artigo 208 da Organização Acadêmica enumera diversos direitos dos estudantes do IFPE. Alguns deles incluem ser tratado com respeito, ter dias letivos assegurados, usar serviços especializados, e solicitar procedimentos de matrícula, entre outros."
+
+  utter_dias_letivos_garantidos:
+    - text: "Como estudante do IFPE, você tem assegurado o cumprimento de 100 dias letivos semestrais ou 200 dias letivos anuais. Além disso, a carga horária dos componentes curriculares do seu curso, conforme o Projeto Pedagógico do Curso (PPC), também é garantida."
+
+  utter_nao_discriminacao:
+    - text: "Sim, é seu direito ser tratado sem discriminação de qualquer espécie dentro da instituição."
+
+  utter_uso_servicos_especializados:
+    - text: "Você tem o direito de utilizar os serviços especializados oferecidos pela Instituição, como a biblioteca, laboratórios, oficinas, instalações desportivas e outros, de acordo com as normas de acesso definidas por cada campus."
+
+  utter_procedimentos_matricula_direitos:
+    - text: "Você tem o direito de renovar, trancar, cancelar, reabrir matrícula e requerer transferência e outros documentos. Se for maior de idade, pode fazer isso diretamente; se for menor, através dos pais ou responsáveis, sempre dentro das normas e dos prazos estabelecidos pelo Calendário Acadêmico."
+
+  utter_auxilio_bolsas_assistencia:
+    - text: "Sim, você pode se candidatar a auxílios e bolsas da assistência ao estudante, inseridas nos Programas Institucionais, de acordo com as normas específicas vigentes."
+
+  utter_dificuldades_e_sugestoes:
+    - text: "Você pode apresentar suas dificuldades relativas ao desenvolvimento educacional, bem como propor sugestões para a melhoria da qualidade de vida acadêmica, ao setor de Assistência Estudantil do Campus ou instância equivalente no Polo."
+
+  utter_deveres_discentes:
+    - text: "Além do que a Lei exige, os deveres do estudante incluem ter conduta ética, cumprir as normas e o Calendário Acadêmico, manter contato com a Coordenação, tratar a comunidade com respeito e ser assíduo e pontual às aulas, entre outros."
+
+  utter_conduta_etica:
+    - text: "É dever do estudante ter conduta ética tanto dentro quanto fora da Instituição."
+
+  utter_cumprimento_normas_calendario:
+    - text: "É dever do estudante cumprir todas as normas que regem o IFPE e o Calendário Acadêmico do Campus ou da Educação a Distância. Também deve comparecer às atividades estabelecidas no calendário, quando solicitado."
+
+  utter_contato_departamento_coordenacao:
+    - text: "É dever do estudante manter contato com o Departamento Acadêmico e Coordenação do Curso, ou instâncias equivalentes, para receber orientações acadêmicas."
+
+  utter_tratamento_comunidade_academica:
+    - text: "É dever do estudante tratar a comunidade acadêmica e qualquer visitante com respeito, atenção, igualdade de condições e sem discriminação de qualquer natureza."
+
+  utter_codigo_matricula:
+    - text: "É dever do estudante ter conhecimento e guardar consigo o código de matrícula."
+
+  utter_empenho_aproveitamento:
+    - text: "É dever do estudante aplicar o máximo empenho no aproveitamento do ensino ministrado."
+
+  utter_assiduidade_pontualidade:
+    - text: "É dever do estudante ser assíduo e pontual às aulas, assim como aos trabalhos acadêmicos."
+
+  utter_justificativa_ausencia:
+    - text: "É dever do estudante apresentar justificativa para ausência nas atividades didático-pedagógicas, por meio de atestado médico, comprovante de serviço militar ou outros previstos em Lei, conforme estabelecido no Art. 146."
+
+  utter_conhecimento_medias_notas:
+    - text: "É dever do estudante tomar conhecimento das médias das avaliações atribuídas pelo professor de cada componente curricular, no final de cada etapa avaliativa ao serem lançadas no Sistema de Registro Acadêmico."
+
+  utter_uso_uniforme:
+    - text: "O uso do Uniforme Escolar é obrigatório para estudantes dos Cursos Técnicos (formas integrada, concomitante e subsequente ao Ensino Médio e PROEJA). É facultativo para estudantes do ensino superior, pós-graduação e do turno noturno. É dever do estudante usá-lo conforme o Regulamento aprovado por Resolução do Conselho Superior do IFPE. O uso indevido do uniforme é proibido."
+
+  utter_ambientes_limpos:
+    - text: "É dever do estudante manter limpos os ambientes de estudos e demais dependências da Instituição."
+
+  utter_proibicoes_discentes:
+    - text: "Entre as proibições aos estudantes do IFPE, destacam-se: participar de faltas coletivas, usar indevidamente o uniforme, provocar algazarras, usar aparelhos eletrônicos sem autorização em atividades acadêmicas, e promover coletas sem autorização, entre outros. Também é proibido qualquer conduta que atente contra o decoro público, como assediar, discriminar, proferir palavras de baixo calão, ou portar substâncias perigosas."
+
+  utter_proibido_faltas_coletivas:
+    - text: "É vedado aos estudantes do IFPE participar de movimentos de faltas coletivas às aulas."
+
+  utter_proibido_aparelho_eletronico:
+    - text: "É vedado aos estudantes utilizar qualquer aparelho eletrônico nas atividades acadêmicas sem autorização do docente ou servidor responsável."
+
+  utter_proibido_arrecadar_dinheiro:
+    - text: "É vedado aos estudantes promover coletas, festas, rifas, “livros de ouro”, venda de comida ou objetos, ou outras modalidades de arrecadar dinheiro e doações, usando o nome do estabelecimento sem a expressa autorização da Direção Geral do Campus ou da Educação a Distância."
+
+  utter_proibido_equipamento_instituicao:
+    - text: "É vedado aos estudantes conservar em seu poder qualquer equipamento ou instrumento da Instituição, salvo com a expressa autorização das instâncias competentes."
+
+  utter_proibido_publicacao_midia:
+    - text: "É vedado aos estudantes fazer publicação em imprensa (falada, escrita, televisionada), nas redes sociais, ou quaisquer outros meios de comunicação em nome da instituição, sem autorização expressa da Direção Geral do Campus ou da Educação a Distância, especialmente aquelas que atentem contra a imagem institucional, de servidores públicos e estudantes do IFPE."
+
+  utter_proibido_desordem_assedio:
+    - text: "É vedado aos estudantes participar de movimentos que ensejem desordem na Instituição ou incitar outrem a fazê-lo. Também é proibido tratar qualquer membro da comunidade acadêmica de forma desumana, violenta, aterrorizante, vexatória ou constrangedora, e assediar ou discriminar qualquer pessoa por motivo de raça, etnia, classe, credo, gênero, orientação sexual ou outros, nas dependências do IFPE e em locais de atividade extraclasse."
+
+  utter_proibido_palavras_obscenidades:
+    - text: "É vedado aos estudantes proferir palavra de baixo calão, gesticular obscenidades, escrever ou fazer desenhos pornográficos em qualquer dependência da Instituição, bem como se valer de meios eletrônicos para ter acesso a pornografias ou similares."
+
+  utter_proibido_substancias_perigosas:
+    - text: "É vedado aos estudantes apresentar-se nas dependências da Instituição, ou em qualquer ambiente externo ao IFPE onde esteja participando de atividades, portando ou sob o efeito de bebidas alcoólicas e de qualquer outra substância tóxica proibida por Lei. Também é proibido introduzir ou portar na Instituição armas, substâncias inflamáveis, explosivos ou qualquer objeto que represente perigo."
+
+  utter_proibido_facilitar_entrada_perigo:
+    - text: "É vedado aos estudantes facilitar a entrada de pessoa que represente perigo para si ou para a comunidade acadêmica."
+
+  utter_regime_disciplinar_discente:
+    - text: "O Regime Disciplinar Discente visa manter a ordem e o respeito à Lei e ao Regimento do IFPE, lidando com casos de indisciplina. Os processos disciplinares podem resultar em sanções que vão desde uma advertência verbal até o desligamento do estudante. O documento foi aprovado em Resolução CONSUP nº 04/2015, em 27 de janeiro de 2015, e está disponível na íntegra no site do IFPE."
+
+  utter_representantes_turmas:
+    - text: "Será escolhido um estudante representante para cada turma no início do período letivo, com o objetivo de fortalecer o processo pedagógico e a interação dos estudantes com a Instituição. Ao representante da turma caberá representar sua turma junto à comunidade acadêmica e participar das atividades relacionadas ao ensino-aprendizagem que envolvam a turma como um todo."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

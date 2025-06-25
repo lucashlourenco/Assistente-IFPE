@@ -1,0 +1,680 @@
+version: "3.1"
+
+nlu:
+
+- intent: saudar
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - oi, tudo bem?
+    - opa, tudo bom?
+    - opa, tudo bem?
+    - e aê
+    - e aí, tudo bem?
+    - e aí, tudo bem?
+    - e aê, tudo bem?
+    - e aê, tudo bom?
+    - e aê, de boa?
+    - e aí, de boa?
+    - salve
+    - dale
+    - opa
+    - e aí
+    - eae
+
+- intent: sobre
+  examples: |
+    - quem é você?
+    - me fale sobre você
+
+- intent: afirmacao
+  examples: |
+    - sim
+    - com certeza
+    - óbvio
+    - sim, obrigado
+    - claro
+
+- intent: negacao
+  examples: |
+    - não
+    - n
+    - negativo
+    - claro que não
+    - óbvio que não
+    - não mesmo
+    - nem
+
+- intent: agradecimento
+  examples: |
+    - obrigado
+    - valeu
+    - vlw
+    - agradecido
+    - grato
+    - tamo junto
+
+- intent: email_direcao
+  examples: |
+    - qual o e-mail da direção?
+    - qual o e-mail da direção de ensino?
+    - o email da direção de ensino
+    - o e-mail da direção de ensino
+    - e-mail da direção
+    - email direção
+    - o e-mail da direção
+    - quero o e-mail da direção
+
+- intent: contatos
+  examples: |
+    - como posso entrar em contato?
+    - quais são os contatos do campus?
+    - quais são os contatos daqui?
+    - quero os contatos
+    - contatos
+
+- intent: div_pesquisa
+  examples: |
+    - qual o email da divisão de pesquisa e extensão?
+    - qual o email de pesquisa e extensão?
+    - qual o e-mail pra falar sobre extensão?
+    - qual o e-mail pra falar sobre pesquisa?
+
+- intent: coord_ads
+  examples: |
+    - qual o email da divisão coordenacao de ads?
+    - qual o email da coordenacao de análise e desenvolvimento de sistemas?
+    - qual o e-mail pra falar sobre o curso de ads?
+    - qual o e-mail pra falar sobre o curso de análise e desenvolvimento de sistemas?
+    - qual o e-mail pra falar sobre pesquisa?
+
+- intent: primeiro_acesso_qacademico
+  examples: |
+    - como faço o primeiro acesso no qacademico?
+    - qual o site do qacademico?
+    - como crio a senha do qacademico?
+    - esqueci minha senha do qacademico
+    - quero acessar o qacademico pela primeira vez
+    - como recuperar a senha do qacademico?
+    - me ajuda com o qacademico
+    - o que é qacademico?
+    - não consigo entrar no qacademico
+    - onde acesso o qacademico?
+
+- intent: obter_matricula
+  examples: |
+    - onde consigo minha matrícula?
+    - como obtenho meu número de matrícula?
+    - quem pode me dar a matrícula?
+    - preciso da minha matrícula
+    - minha matrícula
+    - como sei minha matrícula?
+
+- intent: email_incorreto_qacademico
+  examples: |
+    - meu email está errado no qacademico
+    - o email cadastrado no qacademico está incorreto
+    - não recebi o email de recuperação do qacademico
+    - meu email do qacademico não funciona
+    - e-mail errado qacademico
+    - não chegou o e-mail
+
+- intent: criar_email_institucional
+  examples: |
+    - como criar o email institucional?
+    - quero meu email do ifpe
+    - qual o site para criar o email institucional?
+    - onde faço o email institucional?
+    - preciso do email institucional
+    - como acesso meu email ifpe?
+
+- intent: problema_email_institucional
+  examples: |
+    - já tenho email institucional e não consigo criar outro
+    - meu email institucional não funciona
+    - tive problema para criar o email institucional
+    - não consigo criar o email institucional
+    - e-mail institucional não funciona
+    - erro no e-mail institucional
+
+- intent: perguntar_ferias
+  examples: |
+    - Quando são as férias?
+    - Qual o período de férias docentes e discentes?
+    - Férias de 2025.1
+    - Férias de 2025.2
+    - Quando é o recesso?
+    - Qual a data das férias?
+    - Tem férias em julho?
+    - Quando começam as férias de janeiro?
+    - As férias de docentes e discentes são quando?
+
+- intent: perguntar_inicio_semestre
+  examples: |
+    - Quando começa o semestre 2025.1?
+    - Início do semestre para novatos
+    - Início do semestre para veteranos
+    - Aula inaugural de 2025.1
+    - Quando inicia o semestre 2025.2?
+    - Data de início do ano letivo
+    - Quando voltam as aulas?
+
+- intent: perguntar_matricula_veteranos
+  examples: |
+    - Quando é a matrícula dos veteranos?
+    - Matrícula obrigatória dos veteranos é online?
+    - Data de matrícula para veteranos
+    - Como faço a matrícula de veterano?
+
+- intent: perguntar_matricula_novatos
+  examples: |
+    - Quando é a matrícula dos novatos?
+    - Matrícula dos calouros 2025.1
+    - Edital de matrícula dos novatos
+    - Data de matrícula para novatos
+
+- intent: solicitar_reabertura_matricula
+  examples: |
+    - Quero solicitar reabertura de matrícula
+    - Prazo para reabrir matrícula
+    - Data limite para reabertura de matrícula
+    - Como faço para reabrir minha matrícula 2025.1?
+
+- intent: solicitar_trancamento_matricula
+  examples: |
+    - Quando posso solicitar trancamento de matrícula?
+    - Período para trancar matrícula
+    - Trancamento de matrícula
+
+- intent: modificacao_matricula
+  examples: |
+    - Quando posso modificar a matrícula?
+    - Período de modificação de matrícula
+    - Mudar minha matrícula
+
+- intent: aproveitamento_disciplinas
+  examples: |
+    - Quando solicitar aproveitamento de disciplinas?
+    - Prazo para aproveitamento de disciplinas
+    - Como pedir aproveitamento de disciplina?
+
+- intent: perguntar_feriado
+  examples: |
+    - Qual o feriado de abril?
+    - Tem feriado em maio?
+    - Quando é o feriado de São João?
+    - Dia da Independência é feriado?
+    - Feriado de Nossa Senhora Aparecida
+    - Consciência Negra é feriado?
+    - Natal é feriado?
+    - Feriados de 2025
+    - Quais são os feriados nacionais?
+    - Feriado Tiradentes
+    - Feriado Dia do Trabalhador
+    - Feriado Proclamação da República
+    - Feriado Confraternização Universal
+
+- intent: perguntar_avaliacoes_unidades
+  examples: |
+    - Quando são as avaliações?
+    - Período de avaliações da 1ª unidade
+    - Avaliações da 2ª unidade
+    - Data das provas
+    - Quando termina a 1ª unidade?
+    - Término da 2ª unidade
+    - Término da 3ª unidade
+    - Prazo para notas no Q-Acadêmico
+    - Quando termina o ano letivo?
+    - Prazo final para notas do Q-Acadêmico
+    - Notas da unidade no Q-Acadêmico
+    - Avaliações da 3ª unidade
+
+- intent: perguntar_conselho_classe
+  examples: |
+    - Quando são os Conselhos de Classe?
+    - Data do 1º Conselho de Classe
+    - Conselho de Classe de Ensino Médio
+    - Próximo Conselho de Classe
+    - Conselho de Classe em julho
+    - Conselho de Classe em janeiro
+
+- intent: perguntar_semanas_especiais
+  examples: |
+    - Semana de Conscientização do Autismo
+    - Semana dos Povos Originários
+    - Semana de Administração e Tecnologia da Informação
+    - Semana Nacional de Ciência e Tecnologia
+    - Semana da Consciência Negra
+    - Semana de Arte e Cultura
+    - Quando é a Semana da Mulher Negra?
+    - Dia Internacional do Orgulho LGBTQIA+
+    - Dia da Pessoa com Deficiência
+    - Dia da Pessoa Idosa
+
+- intent: perguntar_provas_finais
+  examples: |
+    - Quando são as provas finais?
+    - Período de exames finais
+    - Data de provas finais
+    - Prazo para notas dos exames finais
+
+- intent: perguntar_ferias_docentes
+  examples: |
+    - Férias dos docentes
+    - Quando os professores entram de férias?
+    - Férias docentes em fevereiro
+    - Férias docentes em julho
+    - Férias dos professores em janeiro
+
+- intent: perguntar_encontro_pedagogico
+  examples: |
+    - Quando é o Encontro Pedagógico?
+    - Encontro Pedagógico 2025.1
+    - Encontro Pedagógico 2025.2
+    - Reunião de Planejamento dos docentes
+
+- intent: perguntar_dias_letivos
+  examples: |
+    - Quantos dias letivos em março?
+    - Dias letivos de abril
+    - Quantos dias letivos tem o mês de junho?
+    - Dias letivos em setembro
+    - Dias letivos em dezembro
+
+- intent: perguntar_sabadost_letivos
+  examples: |
+    - Quais são os sábados letivos?
+    - Tem sábado letivo em março?
+    - Sábado letivo em abril
+    - Sábado letivo em maio
+    - Próximo sábado letivo
+    - Sábados letivos para compensação
+
+
+- intent: alterar_matricula
+  examples: |
+    - Como faço para alterar minha matrícula?
+    - Quero incluir ou retirar disciplinas
+    - Posso mudar minhas disciplinas?
+    - Alterar disciplinas da matrícula
+    - Como adiciono uma disciplina?
+    - Como retiro uma disciplina?
+
+- intent: trancar_matricula
+  examples: |
+    - Como faço para trancar minha matrícula?
+    - Qual o prazo para trancar a matrícula?
+    - Quem tem direito a trancar matrícula?
+    - Posso trancar minha matrícula?
+    - Duração máxima do trancamento de matrícula
+    - Matrícula suspensa
+    - Por quanto tempo posso trancar a matrícula?
+
+- intent: cancelar_matricula
+  examples: |
+    - Como faço para cancelar minha matrícula?
+    - Quero cancelar meu vínculo com o curso
+    - Como cancelar a matrícula do IFPE?
+    - Cancelamento definitivo de matrícula
+    - Documentos para cancelar matrícula
+
+- intent: aproveitamento_disciplinas_isencao
+  examples: |
+    - Como faço para pedir aproveitamento de disciplinas?
+    - Quero isenção de disciplinas
+    - Posso aproveitar disciplinas de outro curso?
+    - Documentos para aproveitamento de disciplinas
+    - Onde consigo as ementas das disciplinas?
+    - Como pedir dispensa de disciplina?
+    - Matriz curricular do curso de origem
+    - Histórico escolar do curso de origem
+
+- intent: emitir_documentos
+  examples: |
+    - Como emito meu histórico escolar?
+    - Preciso de um comprovante de matrícula
+    - Onde consigo meu histórico?
+    - Como pego meu comprovante?
+    - Posso emitir documentos online?
+
+- intent: solicitar_diploma
+  examples: |
+    - Como faço para solicitar meu diploma?
+    - Quais documentos preciso para o diploma?
+    - Quero pedir meu diploma
+    - Diploma final do curso
+    - Declaração de Nada Consta da Biblioteca
+
+- intent: contato_duvidas
+  examples: |
+    - Para onde envio minhas dúvidas?
+    - Qual o email de contato para dúvidas?
+    - Preciso de um contato da secretaria
+    - Quem pode me ajudar se eu tiver dúvidas?
+    - Email para dúvidas gerais
+    - Não sei com quem falar sobre isso
+    - Me dá o contato da secretaria
+    - Onde posso tirar uma dúvida?
+    - Pra quem eu mando email com dúvidas?
+    - Qual o contato em caso de dúvidas?
+    - Tenho uma dúvida, para onde devo enviar email?
+
+- intent: programa_monitoria
+  examples: |
+    - O que é o Programa Institucional de Monitoria?
+    - Como funciona a monitoria?
+    - Quero saber sobre monitoria
+    - Existe programa de monitoria no IFPE Jaboatão?
+    - Informações sobre monitoria
+
+- intent: edital_monitoria
+  examples: |
+    - Qual o edital de monitoria?
+    - Edital da monitoria 2025.1
+    - Onde encontro o edital de monitoria?
+    - Quando sai o edital de monitoria?
+    - Edital de monitoria do IFPE
+
+- intent: contato_monitoria
+  examples: |
+    - Qual o e-mail da coordenação de monitoria?
+    - Preciso falar com a monitoria
+    - Contato da monitoria
+    - E-mail da monitoria
+    - Para onde envio dúvidas sobre monitoria?
+
+- intent: carteira_estudantil
+  examples: |
+    - Como faço para emitir a carteira estudantil?
+    - Onde solicito a carteira de estudante?
+    - Preciso da minha carteira de identificação estudantil.
+    - Site para carteira estudantil
+    - Como pegar a carteira de ônibus?
+    - Carteirinha de estudante
+
+- intent: contato_carteira_estudantil
+  examples: |
+    - Qual o e-mail para dúvidas sobre a carteira estudantil?
+    - Contato da carteira de estudante
+    - Quem contatar sobre a carteirinha?
+    - E-mail carteira estudantil
+
+- intent: acompanhamento_psicossocial
+  examples: |
+    - O que é o Acompanhamento Psicossocial?
+    - Como funciona o acompanhamento psicológico?
+    - O IFPE oferece apoio psicológico?
+    - Quero saber sobre orientação pedagógica e social.
+    - O que é o Programa de Acompanhamento Psicossocial?
+    - Quais serviços o acompanhamento psicossocial oferece?
+    - Tem atendimento médico ou odontológico para estudantes?
+    - Orientação nutricional para alunos
+
+- intent: quem_tem_direito_psicossocial
+  examples: |
+    - Quem pode usar o Acompanhamento Psicossocial?
+    - Todos os alunos têm direito ao acompanhamento?
+    - Estudantes podem acessar o programa psicossocial?
+    - Tenho direito ao acompanhamento psicossocial?
+
+- intent: setores_acompanhamento_psicossocial
+  examples: |
+    - Que setor procuro para acompanhamento psicossocial?
+    - Contato do Serviço Social
+    - E-mail da Psicologia do campus
+    - Onde procuro ajuda psicológica?
+    - Qual o contato do Serviço Social?
+    - Com quem falo sobre apoio psicossocial?
+
+- intent: direitos_discentes
+  examples: |
+    - Quais são os direitos dos alunos do IFPE?
+    - Quais meus direitos como estudante?
+    - O que diz o artigo 208 da Organização Acadêmica?
+    - Direitos do corpo discente
+    - Meus direitos no IFPE
+    - Quais são os direitos do aluno?
+
+- intent: dias_letivos_garantidos
+  examples: |
+    - Quantos dias letivos são assegurados?
+    - O IFPE garante 100 dias letivos?
+    - Carga horária dos componentes curriculares
+    - Meus dias letivos são garantidos?
+
+- intent: nao_discriminacao
+  examples: |
+    - Tenho direito a não ser discriminado?
+    - O que é o direito de não discriminação?
+    - Posso ser tratado sem discriminação?
+
+- intent: uso_servicos_especializados
+  examples: |
+    - Posso usar a biblioteca?
+    - Tenho direito a usar os laboratórios?
+    - Posso usar as instalações desportivas?
+    - Quais serviços especializados posso usar?
+    - Uso de oficinas e outros serviços
+    - Como uso a biblioteca e laboratórios?
+
+- intent: procedimentos_matricula_direitos
+  examples: |
+    - Posso renovar minha matrícula?
+    - Tenho direito a trancar a matrícula?
+    - Posso cancelar minha matrícula?
+    - Como faço para reabrir a matrícula?
+    - Posso requerer transferência?
+    - Quais documentos posso requerer?
+    - Quem pode fazer procedimentos de matrícula?
+    - Prazos para procedimentos de matrícula
+
+- intent: auxilio_bolsas_assistencia
+  examples: |
+    - Posso me candidatar a auxílios?
+    - Tenho direito a bolsas de assistência estudantil?
+    - Como conseguir auxílio estudantil?
+    - Programas Institucionais de assistência
+    - Quais bolsas posso solicitar?
+
+- intent: dificuldades_e_sugestoes
+  examples: |
+    - Onde posso apresentar minhas dificuldades educacionais?
+    - Para quem eu apresento sugestões de melhoria acadêmica?
+    - Setor para dificuldades de desenvolvimento educacional
+    - Onde posso dar sugestões para a vida acadêmica?
+    - Falar com a Assistência Estudantil
+
+- intent: deveres_discentes
+  examples: |
+    - Quais são os deveres dos alunos do IFPE?
+    - Quais os deveres de um estudante no IFPE?
+    - Me fala sobre os deveres do corpo discente.
+    - O que eu devo fazer como aluno?
+    - Deveres de estudantes
+
+- intent: conduta_etica
+  examples: |
+    - O que é conduta ética dentro do IFPE?
+    - Como devo me comportar na instituição?
+    - Devo ter conduta ética?
+
+- intent: cumprimento_normas_calendario
+  examples: |
+    - Devo cumprir as normas do IFPE?
+    - É preciso seguir o calendário acadêmico?
+    - Devo comparecer às atividades?
+
+- intent: contato_departamento_coordenacao
+  examples: |
+    - Devo manter contato com o Departamento Acadêmico?
+    - Preciso falar com a Coordenação do Curso?
+    - Onde recebo orientações acadêmicas?
+
+- intent: tratamento_comunidade_academica
+  examples: |
+    - Como devo tratar a comunidade acadêmica?
+    - Devo tratar todos com respeito?
+    - Não posso discriminar ninguém?
+
+- intent: codigo_matricula
+  examples: |
+    - Devo guardar meu código de matrícula?
+    - Preciso saber meu código de matrícula?
+
+- intent: empenho_aproveitamento
+  examples: |
+    - O que é empenho no aproveitamento do ensino?
+    - Devo me dedicar aos estudos?
+
+- intent: assiduidade_pontualidade
+  examples: |
+    - Devo ser assíduo nas aulas?
+    - É importante ser pontual?
+    - Preciso comparecer e ser pontual nas aulas?
+
+- intent: justificativa_ausencia
+  examples: |
+    - Como justificar ausência em aulas?
+    - Preciso de atestado médico para faltas?
+    - Quais comprovantes servem para justificar ausência?
+
+- intent: conhecimento_medias_notas
+  examples: |
+    - Devo saber minhas médias das avaliações?
+    - Onde vejo minhas notas?
+    - As notas são lançadas no Sistema de Registro Acadêmico?
+
+- intent: uso_uniforme
+  examples: |
+    - É obrigatório usar uniforme?
+    - Quem deve usar uniforme no IFPE?
+    - O que é o regulamento do uniforme?
+    - Posso usar meu uniforme indevidamente?
+    - Quem não precisa usar uniforme?
+    - Sou do noturno, preciso de uniforme?
+    - Estudantes do ensino superior usam uniforme?
+    - Qual a regra sobre o uniforme escolar?
+
+- intent: ambientes_limpos
+  examples: |
+    - Devo manter os ambientes limpos?
+    - Preciso cuidar da limpeza da instituição?
+
+- intent: proibicoes_discentes
+  examples: |
+    - O que os estudantes são proibidos de fazer?
+    - Quais as proibições no IFPE?
+    - O que eu não posso fazer como aluno?
+    - Proibições do corpo discente
+
+- intent: proibido_faltas_coletivas
+  examples: |
+    - Posso participar de faltas coletivas?
+    - É proibido faltar coletivamente?
+
+- intent: proibido_aparelho_eletronico
+  examples: |
+    - Posso usar celular em aula?
+    - É proibido usar eletrônicos sem autorização?
+    - Aparelho eletrônico nas atividades acadêmicas
+
+- intent: proibido_arrecadar_dinheiro
+  examples: |
+    - Posso fazer rifas ou coletas na instituição?
+    - É proibido vender coisas no IFPE sem autorização?
+    - Posso arrecadar dinheiro no nome da instituição?
+
+- intent: proibido_equipamento_instituicao
+  examples: |
+    - Posso pegar equipamentos da instituição?
+    - É proibido levar equipamentos do IFPE?
+
+- intent: proibido_publicacao_midia
+  examples: |
+    - Posso fazer publicações em nome do IFPE nas redes sociais?
+    - É proibido falar em nome da instituição na imprensa?
+    - Posso atentar contra a imagem institucional?
+
+- intent: proibido_desordem_assedio
+  examples: |
+    - É proibido causar desordem?
+    - Não posso assediar ou discriminar ninguém?
+    - O que é assediar ou discriminar?
+    - Proibido agredir colegas ou servidores
+
+- intent: proibido_palavras_obscenidades
+  examples: |
+    - Posso proferir palavras de baixo calão?
+    - É proibido fazer desenhos pornográficos?
+    - Acesso a pornografia em meios eletrônicos
+
+- intent: proibido_substancias_perigosas
+  examples: |
+    - Posso portar bebidas alcoólicas no IFPE?
+    - É proibido usar substâncias tóxicas?
+    - Posso levar armas para a instituição?
+    - É proibido entrar com explosivos?
+
+- intent: proibido_facilitar_entrada_perigo
+  examples: |
+    - Posso levar pessoas perigosas para o campus?
+    - É proibido facilitar entrada de pessoas que representem perigo?
+
+- intent: regime_disciplinar_discente
+  examples: |
+    - O que é o Regime Disciplinar Discente?
+    - Como funciona o processo disciplinar para estudantes?
+    - Quais as punições do regime disciplinar?
+    - Onde encontro o documento do regime disciplinar?
+    - O que é a Resolução CONSUP nº 04/2015?
+
+- intent: representantes_turmas
+  examples: |
+    - Como funciona a representação de turma?
+    - O que faz um representante de turma?
+    - Qual o papel do representante de turma?
+    - Como é escolhido o representante de turma?
+
+- intent: listar_orientadores
+  examples: |
+    - Quais são os professores orientadores de TCC?
+    - Quem pode orientar TCC em ADS?
+    - Lista de orientadores do curso de Análise e Desenvolvimento de Sistemas
+    - Quais professores orientam?
+    - Nomes dos orientadores
+    - Me fala sobre os orientadores de ADS
+
+- intent: perguntar_orientador_por_area
+  examples: |
+    - Quem orienta sobre [área de atuação](area_atuacao)?
+    - Professores que orientam em [Engenharia de Software](area_atuacao)
+    - Tenho interesse em [Banco de Dados](area_atuacao), quem pode me orientar?
+    - Alguém orienta em [Redes de Computadores](area_atuacao)?
+    - Quem é orientador de [Desenvolvimento Web](area_atuacao)?
+    - Quais professores atuam na área de [Inteligência Artificial](area_atuacao)?
+
+- intent: perguntar_contato_orientador
+  examples: |
+    - Qual o e-mail do [Prof. [cite_start]Ana Valéria de Oliveira](professor_name)? [cite: 1]
+    - [cite_start]Preciso do contato do [professor Daniel Pires](professor_name). [cite: 1]
+    - Manda o e-mail da [Profa. [cite_start]Luana Dias da Silva](professor_name). [cite: 1]
+    - [cite_start]Como entro em contato com o [Professor Marcos de Freitas](professor_name)? [cite: 1]
+    - [cite_start]Qual o email de [Ana Valéria](professor_name)? [cite: 1]
+
+- intent: perguntar_temas_orientador
+  examples: |
+    - [cite_start]Quais são os temas de TCC que [Ana Valéria de Oliveira](professor_name) sugere? [cite: 1]
+    - [cite_start]Sugestões de TCC do [professor Daniel Pires](professor_name). [cite: 1]
+    - [cite_start]Temas de pesquisa da [Luana Dias da Silva](professor_name). [cite: 1]
+    - [cite_start][Marcos de Freitas](professor_name) tem alguma sugestão de tema? [cite: 1]
+    - [cite_start]Quais os temas que o [professor Roberto Carlos](professor_name) orienta? [cite: 1]
+
+- intent: listar_areas_atuacao
+  examples: |
+    - Quais as áreas de atuação dos orientadores?
+    - Em que áreas os professores orientam TCC?
+    - Me lista as áreas de orientação.
+    - Quais temas gerais de orientação existem?

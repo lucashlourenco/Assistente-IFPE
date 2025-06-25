@@ -1,0 +1,384 @@
+version: "3.1"
+
+rules:
+
+- rule: Saudar o usuario
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+
+
+- rule: Sobre o chat
+  steps:
+  - intent: sobre
+  - action: utter_sobre
+
+- rule: Afirmacao do usuario
+  steps:
+  - intent: afirmacao
+  - action: utter_afirmacao
+
+- rule: Negacao do usuario
+  steps:
+  - intent: negacao
+  - action: utter_negacao
+
+- rule: Agradecimento do usuario
+  steps:
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- rule: E-mail direcao
+  steps:
+  - intent: email_direcao
+  - action: utter_email_direcao
+
+- rule: Mandar contatos
+  steps:
+  - intent: contatos
+  - action: utter_contatos
+
+- rule: E-mail da divisao de pesquisa
+  steps:
+  - intent: div_pesquisa
+  - action: utter_div_pesquisa
+
+- rule: E-mail da coordenacao de ADS
+  steps:
+  - intent: coord_ads
+  - action: utter_coord_ads
+
+- rule: Saudar e responder sobre primeiro acesso QAcademico
+  steps:
+  - intent: primeiro_acesso_qacademico
+  - action: utter_primeiro_acesso_qacademico
+
+- rule: Responder sobre como obter matrícula
+  steps:
+  - intent: obter_matricula
+  - action: utter_obter_matricula
+
+- rule: Responder sobre email incorreto no QAcademico
+  steps:
+  - intent: email_incorreto_qacademico
+  - action: utter_email_incorreto_qacademico
+
+- rule: Responder sobre criar email institucional
+  steps:
+  - intent: criar_email_institucional
+  - action: utter_criar_email_institucional
+
+- rule: Responder sobre problema com email institucional
+  steps:
+  - intent: problema_email_institucional
+  - action: utter_problema_email_institucional
+
+- rule: Responder sobre ferias
+  steps:
+  - intent: perguntar_ferias
+  - action: utter_ferias
+
+- rule: Responder sobre inicio do semestre
+  steps:
+  - intent: perguntar_inicio_semestre
+  - action: utter_inicio_semestre
+
+- rule: Responder sobre matricula de veteranos
+  steps:
+  - intent: perguntar_matricula_veteranos
+  - action: utter_matricula_veteranos
+
+- rule: Responder sobre matricula de novatos
+  steps:
+  - intent: perguntar_matricula_novatos
+  - action: utter_matricula_novatos
+
+- rule: Responder sobre reabertura de matricula
+  steps:
+  - intent: solicitar_reabertura_matricula
+  - action: utter_solicitar_reabertura_matricula
+
+- rule: Responder sobre trancamento de matricula
+  steps:
+  - intent: solicitar_trancamento_matricula
+  - action: utter_solicitar_trancamento_matricula
+
+- rule: Responder sobre modificacao de matricula
+  steps:
+  - intent: modificacao_matricula
+  - action: utter_modificacao_matricula
+
+- rule: Responder sobre aproveitamento de disciplinas
+  steps:
+  - intent: aproveitamento_disciplinas
+  - action: utter_aproveitamento_disciplinas
+
+- rule: Responder sobre feriados
+  steps:
+  - intent: perguntar_feriado
+  - action: utter_feriado
+
+- rule: Responder sobre avaliacoes e unidades
+  steps:
+  - intent: perguntar_avaliacoes_unidades
+  - action: utter_avaliacoes_unidades
+
+- rule: Responder sobre conselhos de classe
+  steps:
+  - intent: perguntar_conselho_classe
+  - action: utter_conselho_classe
+
+- rule: Responder sobre semanas especiais
+  steps:
+  - intent: perguntar_semanas_especiais
+  - action: utter_semanas_especiais
+
+- rule: Responder sobre provas finais
+  steps:
+  - intent: perguntar_provas_finais
+  - action: utter_provas_finais
+
+- rule: Responder sobre ferias docentes
+  steps:
+  - intent: perguntar_ferias_docentes
+  - action: utter_ferias_docentes
+
+- rule: Responder sobre encontro pedagogico
+  steps:
+  - intent: perguntar_encontro_pedagogico
+  - action: utter_encontro_pedagogico
+
+- rule: Responder sobre dias letivos
+  steps:
+  - intent: perguntar_dias_letivos
+  - action: utter_dias_letivos
+
+- rule: Responder sobre sabados letivos
+  steps:
+    - intent: perguntar_sabadost_letivos
+    - action: utter_sabadost_letivos
+
+- rule: Responder sobre alteracao de matricula
+  steps:
+    - intent: alterar_matricula
+    - action: utter_alterar_matricula
+
+- rule: Responder sobre trancamento de matricula
+  steps:
+    - intent: trancar_matricula
+    - action: utter_trancar_matricula
+
+- rule: Responder sobre cancelamento de matricula
+  steps:
+    - intent: cancelar_matricula
+    - action: utter_cancelar_matricula
+
+- rule: Responder sobre aproveitamento de disciplinas ou isencao
+  steps:
+    - intent: aproveitamento_disciplinas_isencao
+    - action: utter_aproveitamento_disciplinas_isencao
+
+- rule: Responder sobre emissao de historico e comprovante de matricula
+  steps:
+    - intent: emitir_documentos
+    - action: utter_emitir_documentos
+
+- rule: Responder sobre solicitacao de diploma
+  steps:
+    - intent: solicitar_diploma
+    - action: utter_solicitar_diploma
+
+- rule: Responder sobre o Programa de Monitoria
+  steps:
+    - intent: programa_monitoria
+    - action: utter_programa_monitoria
+
+- rule: Responder sobre o Edital de Monitoria
+  steps:
+    - intent: edital_monitoria
+    - action: utter_edital_monitoria
+
+- rule: Responder sobre o contato da Monitoria
+  steps:
+    - intent: contato_monitoria
+    - action: utter_contato_monitoria
+
+- rule: Responder sobre carteira estudantil
+  steps:
+    - intent: carteira_estudantil
+    - action: utter_carteira_estudantil
+
+- rule: Responder sobre contato da carteira estudantil
+  steps:
+    - intent: contato_carteira_estudantil
+    - action: utter_contato_carteira_estudantil
+
+- rule: Responder sobre acompanhamento psicossocial
+  steps:
+    - intent: acompanhamento_psicossocial
+    - action: utter_acompanhamento_psicossocial
+
+- rule: Responder sobre quem tem direito ao psicossocial
+  steps:
+    - intent: quem_tem_direito_psicossocial
+    - action: utter_quem_tem_direito_psicossocial
+
+- rule: Responder sobre setores do acompanhamento psicossocial
+  steps:
+    - intent: setores_acompanhamento_psicossocial
+    - action: utter_setores_acompanhamento_psicossocial
+
+- rule: Responder sobre direitos dos discentes
+  steps:
+    - intent: direitos_discentes
+    - action: utter_direitos_discentes
+
+- rule: Responder sobre dias letivos garantidos
+  steps:
+    - intent: dias_letivos_garantidos
+    - action: utter_dias_letivos_garantidos
+
+- rule: Responder sobre nao discriminacao
+  steps:
+    - intent: nao_discriminacao
+    - action: utter_nao_discriminacao
+
+- rule: Responder sobre uso de servicos especializados
+  steps:
+    - intent: uso_servicos_especializados
+    - action: utter_uso_servicos_especializados
+
+- rule: Responder sobre procedimentos de matricula e direitos
+  steps:
+    - intent: procedimentos_matricula_direitos
+    - action: utter_procedimentos_matricula_direitos
+
+- rule: Responder sobre auxilio e bolsas de assistencia
+  steps:
+    - intent: auxilio_bolsas_assistencia
+    - action: utter_auxilio_bolsas_assistencia
+
+- rule: Responder sobre dificuldades e sugestoes
+  steps:
+    - intent: dificuldades_e_sugestoes
+    - action: utter_dificuldades_e_sugestoes
+
+- rule: Responder sobre deveres dos discentes
+  steps:
+    - intent: deveres_discentes
+    - action: utter_deveres_discentes
+
+- rule: Responder sobre conduta etica
+  steps:
+    - intent: conduta_etica
+    - action: utter_conduta_etica
+
+- rule: Responder sobre cumprimento de normas e calendario
+  steps:
+    - intent: cumprimento_normas_calendario
+    - action: utter_cumprimento_normas_calendario
+
+- rule: Responder sobre contato com departamento e coordenacao
+  steps:
+    - intent: contato_departamento_coordenacao
+    - action: utter_contato_departamento_coordenacao
+
+- rule: Responder sobre tratamento da comunidade academica
+  steps:
+    - intent: tratamento_comunidade_academica
+    - action: utter_tratamento_comunidade_academica
+
+- rule: Responder sobre codigo de matricula
+  steps:
+    - intent: codigo_matricula
+    - action: utter_codigo_matricula
+
+- rule: Responder sobre empenho e aproveitamento
+  steps:
+    - intent: empenho_aproveitamento
+    - action: utter_empenho_aproveitamento
+
+- rule: Responder sobre assiduidade e pontualidade
+  steps:
+    - intent: assiduidade_pontualidade
+    - action: utter_assiduidade_pontualidade
+
+- rule: Responder sobre justificativa de ausencia
+  steps:
+    - intent: justificativa_ausencia
+    - action: utter_justificativa_ausencia
+
+- rule: Responder sobre conhecimento de medias e notas
+  steps:
+    - intent: conhecimento_medias_notas
+    - action: utter_conhecimento_medias_notas
+
+- rule: Responder sobre uso do uniforme
+  steps:
+    - intent: uso_uniforme
+    - action: utter_uso_uniforme
+
+- rule: Responder sobre ambientes limpos
+  steps:
+    - intent: ambientes_limpos
+    - action: utter_ambientes_limpos
+
+- rule: Responder sobre proibicoes discentes
+  steps:
+    - intent: proibicoes_discentes
+    - action: utter_proibicoes_discentes
+
+- rule: Responder sobre proibido faltas coletivas
+  steps:
+    - intent: proibido_faltas_coletivas
+    - action: utter_proibido_faltas_coletivas
+
+- rule: Responder sobre proibido aparelho eletronico
+  steps:
+    - intent: proibido_aparelho_eletronico
+    - action: utter_proibido_aparelho_eletronico
+
+- rule: Responder sobre proibido arrecadar dinheiro
+  steps:
+    - intent: proibido_arrecadar_dinheiro
+    - action: utter_proibido_arrecadar_dinheiro
+
+- rule: Responder sobre proibido equipamento instituicao
+  steps:
+    - intent: proibido_equipamento_instituicao
+    - action: utter_proibido_equipamento_instituicao
+
+- rule: Responder sobre proibido publicacao midia
+  steps:
+    - intent: proibido_publicacao_midia
+    - action: utter_proibido_publicacao_midia
+
+- rule: Responder sobre proibido desordem e assedio
+  steps:
+    - intent: proibido_desordem_assedio
+    - action: utter_proibido_desordem_assedio
+
+- rule: Responder sobre proibido palavras e obscenidades
+  steps:
+    - intent: proibido_palavras_obscenidades
+    - action: utter_proibido_palavras_obscenidades
+
+- rule: Responder sobre proibido substancias perigosas
+  steps:
+    - intent: proibido_substancias_perigosas
+    - action: utter_proibido_substancias_perigosas
+
+- rule: Responder sobre proibido facilitar entrada perigo
+  steps:
+    - intent: proibido_facilitar_entrada_perigo
+    - action: utter_proibido_facilitar_entrada_perigo
+
+- rule: Responder sobre regime disciplinar discente
+  steps:
+    - intent: regime_disciplinar_discente
+    - action: utter_regime_disciplinar_discente
+
+- rule: Responder sobre representantes de turmas
+  steps:
+    - intent: representantes_turmas
+    - action: utter_representantes_turmas
