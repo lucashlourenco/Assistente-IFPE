@@ -2,11 +2,131 @@ version: "3.1"
 
 stories:
 
-- story: informacao com sucesso
+- story: Caminho feliz para perguntas e respostas (Exemplo 1)
   steps:
   - intent: saudar
   - action: utter_saudar
-  - intent: email_direcao
-  - action: utter_email_direcao
+  - intent: perguntar_ferias
+  - action: utter_ferias
   - intent: agradecimento
   - action: utter_agradecimento
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Caminho feliz para perguntas e respostas (Exemplo 2)
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: primeiro_acesso_qacademico
+  - action: utter_primeiro_acesso_qacademico
+  - intent: afirmacao # Ex: "sim, me ajudou"
+  - action: utter_afirmacao
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre o bot e se despede
+  steps:
+  - intent: sobre
+  - action: utter_sobre
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre e-mail da direcao e confirma que ajudou
+  steps:
+  - intent: email_direcao
+  - action: utter_email_direcao
+  - intent: afirmacao
+  - action: utter_afirmacao
+
+- story: Usuario pergunta sobre e-mail da coordenacao de ADS e nao confirma
+  steps:
+  - intent: coord_ads
+  - action: utter_coord_ads
+  - intent: negacao
+  - action: utter_negacao # Aqui o bot pergunta "O que você quer saber?", então a conversa continuaria
+
+- story: Usuario pergunta sobre matricula de novatos
+  steps:
+  - intent: perguntar_matricula_novatos
+  - action: utter_matricula_novatos
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: Usuario pergunta sobre trancamento de matricula
+  steps:
+  - intent: trancar_matricula
+  - action: utter_trancar_matricula
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre documentos (historico/comprovante)
+  steps:
+  - intent: emitir_documentos
+  - action: utter_emitir_documentos
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: Usuario pergunta sobre carteira estudantil e tem duvidas
+  steps:
+  - intent: carteira_estudantil
+  - action: utter_carteira_estudantil
+  - intent: contato_carteira_estudantil # Usuario pergunta por contato depois
+  - action: utter_contato_carteira_estudantil
+  - intent: agradecimento
+  - action: utter_agradecimento
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre acompanhamento psicossocial e quem tem direito
+  steps:
+  - intent: acompanhamento_psicossocial
+  - action: utter_acompanhamento_psicossocial
+  - intent: quem_tem_direito_psicossocial
+  - action: utter_quem_tem_direito_psicossocial
+  - intent: setores_acompanhamento_psicossocial
+  - action: utter_setores_acompanhamento_psicossocial
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre direitos discentes e depois sobre um direito especifico
+  steps:
+  - intent: direitos_discentes
+  - action: utter_direitos_discentes
+  - intent: uso_servicos_especializados
+  - action: utter_uso_servicos_especializados
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: Usuario pergunta sobre deveres discentes e depois sobre uso de uniforme
+  steps:
+  - intent: deveres_discentes
+  - action: utter_deveres_discentes
+  - intent: uso_uniforme
+  - action: utter_uso_uniforme
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pergunta sobre proibicoes e depois sobre uma proibicao especifica
+  steps:
+  - intent: proibicoes_discentes
+  - action: utter_proibicoes_discentes
+  - intent: proibido_substancias_perigosas
+  - action: utter_proibido_substancias_perigosas
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: Usuario pede contatos gerais
+  steps:
+  - intent: contatos
+  - action: utter_contatos
+  - intent: agradecimento
+  - action: utter_agradecimento
+  - intent: despedida
+  - action: utter_despedida
+
+- story: Usuario pede contato para duvidas
+  steps:
+  - intent: contato_duvidas
+  - action: utter_contato_duvidas
+  - intent: despedida
+  - action: utter_despedida

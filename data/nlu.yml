@@ -139,6 +139,7 @@ nlu:
     - não consigo criar o email institucional
     - e-mail institucional não funciona
     - erro no e-mail institucional
+    - estou com um problema no email
 
 - intent: perguntar_ferias
   examples: |
@@ -638,43 +639,359 @@ nlu:
     - Qual o papel do representante de turma?
     - Como é escolhido o representante de turma?
 
-- intent: listar_orientadores
+- intent: info_tcc_geral
   examples: |
-    - Quais são os professores orientadores de TCC?
-    - Quem pode orientar TCC em ADS?
-    - Lista de orientadores do curso de Análise e Desenvolvimento de Sistemas
-    - Quais professores orientam?
-    - Nomes dos orientadores
-    - Me fala sobre os orientadores de ADS
+    - O que é o TCC?
+    - Me explique sobre o Trabalho de Conclusão de Curso.
+    - Como funciona o TCC do IFPE?
+    - Me fala sobre o TCC.
+    - Preciso de informações gerais sobre o TCC.
 
-- intent: perguntar_orientador_por_area
+- intent: info_tcc_formatos
   examples: |
-    - Quem orienta sobre [área de atuação](area_atuacao)?
-    - Professores que orientam em [Engenharia de Software](area_atuacao)
-    - Tenho interesse em [Banco de Dados](area_atuacao), quem pode me orientar?
-    - Alguém orienta em [Redes de Computadores](area_atuacao)?
-    - Quem é orientador de [Desenvolvimento Web](area_atuacao)?
-    - Quais professores atuam na área de [Inteligência Artificial](area_atuacao)?
+    - Quais os formatos de TCC que posso fazer?
+    - Posso fazer o TCC em formato de artigo científico?
+    - Quais são os tipos de TCC aceitos?
+    - O TCC precisa ser uma monografia?
+    - Quais as opções de formato para o trabalho final?
+    - Em que formato posso entregar meu TCC?
 
-- intent: perguntar_contato_orientador
+- intent: info_tcc_apresentacao
   examples: |
-    - Qual o e-mail do [Prof. [cite_start]Ana Valéria de Oliveira](professor_name)? [cite: 1]
-    - [cite_start]Preciso do contato do [professor Daniel Pires](professor_name). [cite: 1]
-    - Manda o e-mail da [Profa. [cite_start]Luana Dias da Silva](professor_name). [cite: 1]
-    - [cite_start]Como entro em contato com o [Professor Marcos de Freitas](professor_name)? [cite: 1]
-    - [cite_start]Qual o email de [Ana Valéria](professor_name)? [cite: 1]
+    - Como é a apresentação do TCC?
+    - Como funciona a defesa do TCC?
+    - Preciso apresentar o TCC para uma banca?
+    - A apresentação do TCC é pública?
+    - Me explique sobre a exposição oral do TCC.
 
-- intent: perguntar_temas_orientador
+- intent: info_tcc_nota_reprovacao
   examples: |
-    - [cite_start]Quais são os temas de TCC que [Ana Valéria de Oliveira](professor_name) sugere? [cite: 1]
-    - [cite_start]Sugestões de TCC do [professor Daniel Pires](professor_name). [cite: 1]
-    - [cite_start]Temas de pesquisa da [Luana Dias da Silva](professor_name). [cite: 1]
-    - [cite_start][Marcos de Freitas](professor_name) tem alguma sugestão de tema? [cite: 1]
-    - [cite_start]Quais os temas que o [professor Roberto Carlos](professor_name) orienta? [cite: 1]
+    - Qual a nota para passar no TCC?
+    - O que acontece se eu for reprovado no TCC?
+    - Qual a nota mínima do TCC?
+    - E se eu tirar menos de 7 no TCC?
+    - Tenho outra chance se for reprovado na defesa?
+    - Qual o prazo para refazer o TCC se eu reprovar?
 
-- intent: listar_areas_atuacao
+- intent: info_tcc_disciplinas_auxiliares
   examples: |
-    - Quais as áreas de atuação dos orientadores?
-    - Em que áreas os professores orientam TCC?
-    - Me lista as áreas de orientação.
-    - Quais temas gerais de orientação existem?
+    - Quais disciplinas ajudam a fazer o TCC?
+    - Tem alguma matéria que auxilia no TCC?
+    - Como a disciplina de Metodologia Científica ajuda?
+    - Quais matérias dão suporte para o TCC?
+    - Existe alguma disciplina que prepara para o TCC?
+
+- intent: info_tcc_quando_iniciar
+  examples: |
+    - Quando devo começar a fazer o TCC?
+    - Em qual período eu começo o TCC?
+    - Qual o melhor momento para iniciar o TCC?
+    - Posso começar o TCC no terceiro período?
+    - Quando é recomendado iniciar a elaboração do TCC?
+
+- intent: info_tcc_documentos
+  examples: |
+    - Onde encontro o modelo de artigo para o TCC?
+    - Existe um modelo de monografia?
+    - Onde acho o regulamento do TCC?
+    - Onde pego a declaração do orientador?
+    - Onde estão os documentos importantes para o TCC?
+
+- intent: info_tcc_obrigatoriedade
+  examples: |
+    - O TCC é obrigatório?
+    - Preciso mesmo fazer o TCC para me formar?
+    - É obrigatório fazer o Trabalho de Conclusão de Curso?
+    - Posso me formar sem o TCC?
+
+- intent: info_niveis_ensino
+  examples: |
+    - Quais tipos de curso o IFPE oferece?
+    - Tem curso superior?
+    - Quais os níveis de ensino?
+    - O que posso cursar no IFPE?
+    - Quais as modalidades de ensino?
+
+- intent: info_matricula_dependencia
+  examples: |
+    - Fiquei em dependência, como faço a matrícula?
+    - Se eu reprovar em algumas matérias, posso avançar de período?
+    - Até quantas matérias posso ficar reprovado para passar de ano?
+    - Como funciona a matrícula em caso de reprovação?
+    - O que é o regime de dependência?
+
+- intent: info_matricula_vinculo
+  examples: |
+    - O que é matrícula vínculo?
+    - Já terminei as matérias, mas falta o estágio. O que eu faço?
+    - Preciso manter a matrícula para fazer o TCC?
+    - Como funciona a matrícula para quem só falta o estágio ou TCC?
+
+- intent: info_trancamento_matricula
+  examples: |
+    - Como faço para trancar o curso?
+    - Posso trancar a matrícula?
+    - Por quanto tempo posso deixar o curso trancado?
+    - O que acontece se eu não voltar depois do trancamento?
+    - Aluno do primeiro período pode trancar?
+
+- intent: info_criterio_aprovacao
+  examples: |
+    - Qual a média para passar?
+    - Como eu sei se fui aprovado?
+    - Qual a frequência mínima para ser aprovado?
+    - Preciso de quanto pra passar no curso técnico?
+    - E no superior, qual a média?
+    - O que preciso para aprovação?
+
+- intent: info_exame_final
+  examples: |
+    - Quem tem direito à prova final?
+    - Como funciona o exame final?
+    - Fiquei de final, o que acontece?
+    - Como é calculada a nota depois do exame final?
+
+- intent: info_jubilamento
+  examples: |
+    - O que é jubilamento?
+    - Quanto tempo eu tenho para terminar o curso?
+    - O que acontece se eu passar do prazo máximo para me formar?
+    - Posso ser expulso se demorar muito para terminar?
+    - Qual o tempo máximo de integralização?
+
+- intent: info_reintegracao
+  examples: |
+    - Abandonei o curso, posso voltar?
+    - Como funciona a reintegração?
+    - Perdi o prazo da matrícula e meu vínculo acabou. Consigo voltar?
+    - Posso pedir reintegração se abandonei o curso?
+
+- intent: ask_orientador_area
+  examples: |
+    - Quem orienta na área de [Inteligência Artificial](area_pesquisa)?
+    - Quais professores trabalham com [Engenharia de Software](area_pesquisa)?
+    - Preciso de um orientador para [Computação em Nuvem](area_pesquisa)
+    - Alguém orienta em [Sistemas Web](area_pesquisa)?
+    - Professores de [Banco de Dados](area_pesquisa)
+    - Quero um orientador para [Segurança da Informação](area_pesquisa)
+    - Quem pode me orientar em [Sistemas Embarcados](area_pesquisa)?
+    - Tem orientador para [Interação Humano-Computador](area_pesquisa)?
+    - Quais os orientadores para a área de [Ciência de Dados](area_pesquisa)?
+    - Quem pesquisa [Informática para Educação](area_pesquisa)?
+    - Professores que trabalham com [Gênero e Computação](area_pesquisa)
+
+- intent: list_areas_pesquisa
+  examples: |
+    - Quais as áreas de pesquisa disponíveis?
+    - Em que áreas os professores orientam?
+    - Me diga quais são as linhas de pesquisa.
+    - Quais são as áreas de TCC?
+    - Listar áreas de pesquisa dos orientadores.
+
+- intent: ask_orientador_area_computacao_em_nuvem
+  examples: |
+    - Quem orienta em Computação em Nuvem?
+    - Professores de Cloud Computing.
+
+- intent: ask_orientador_area_inteligencia_artificial
+  examples: |
+    - Quem são os orientadores de Inteligência Artificial?
+    - Professores que trabalham com IA.
+    - Quem orienta em Inteligência Artificial?
+    - Quero um orientador para IA.
+    - Quem pesquisa Inteligência Artificial?
+    - Quais professores orientam em Inteligência Artificial?
+
+- intent: ask_orientador_area_internet_do_futuro
+  examples: |
+    - Quem pesquisa sobre Internet do Futuro?
+    - Orientadores para Internet do Futuro.
+
+- intent: ask_orientador_area_seguranca_da_informacao
+  examples: |
+    - Quem orienta em Segurança da Informação?
+    - Professores de Segurança.
+
+- intent: ask_orientador_area_engenharia_de_software
+  examples: |
+    - Quais professores trabalham com Engenharia de Software?
+    - Orientador para Engenharia de Software.
+
+- intent: ask_orientador_area_ciencia_de_dados
+  examples: |
+    - Preciso de um orientador para Ciência de Dados.
+    - Quem trabalha com Data Science?
+
+- intent: ask_orientador_area_informatica_para_educacao
+  examples: |
+    - Alguém orienta em Informática para Educação?
+    - Professores da área de Informática para Educação.
+
+- intent: ask_orientador_area_sistemas_web
+  examples: |
+    - Quais os orientadores para a área de Sistemas Web?
+    - Orientação em Sistemas Web.
+
+- intent: ask_orientador_area_sistemas_embarcados
+  examples: |
+    - Quem orienta em Sistemas Embarcados?
+    - Professores para Sistemas Embarcados.
+
+- intent: ask_orientador_area_banco_de_dados
+  examples: |
+    - Quem orienta em Banco de Dados?
+    - Orientadores de BD.
+
+- intent: ask_orientador_area_mineracao_de_dados
+  examples: |
+    - Alguém orienta em Mineração de Dados?
+    - Professores de Data Mining.
+
+- intent: ask_orientador_area_interacao_humano_computador
+  examples: |
+    - Quem trabalha com Interação Humano-Computador?
+    - Orientadores de IHC.
+
+- intent: ask_orientador_area_educacao_em_computacao
+  examples: |
+    - Quem orienta em Educação em Computação?
+    - Professores de Educação em Computação.
+
+- intent: ask_orientador_area_informatica_na_educacao
+  examples: |
+    - Orientadores de Informática na Educação.
+    - Quem pesquisa Informática na Educação?
+
+- intent: ask_orientador_area_genero_e_computacao
+  examples: |
+    - Quem orienta em Gênero e Computação?
+    - Professores que trabalham com Gênero e Computação.
+
+- intent: info_pp_geral
+  examples: |
+    - O que é a Prática Profissional?
+    - Me explique sobre a PP do curso de ADS.
+    - Para que serve a Prática Profissional?
+    - A Prática Profissional é obrigatória?
+
+- intent: info_pp_requisitos
+  examples: |
+    - Quais os requisitos para a Prática Profissional?
+    - Quantas horas de PP eu preciso fazer?
+    - O que preciso para validar a Prática Profissional?
+    - É necessário fazer um relatório da PP?
+
+- intent: info_pp_modalidades
+  examples: |
+    - O que conta como Prática Profissional?
+    - Quais são os tipos de PP?
+    - Estágio vale como Prática Profissional?
+    - Meu trabalho na área de TI conta como PP?
+    - Posso fazer pesquisa ou extensão como Prática Profissional?
+    - Monitoria é válida como PP?
+
+- intent: info_pp_documentos_necessarios
+  examples: |
+    - Quais documentos eu preciso entregar para a PP?
+    - O que é o RFPP?
+    - Que documentos eu entrego para o orientador da Prática Profissional?
+    - Quais comprovantes são necessários para a PP?
+
+- intent: info_pp_prazos
+  examples: |
+    - Qual o prazo para entregar o relatório da PP?
+    - Até quando posso entregar os documentos da Prática Profissional?
+    - Qual o prazo para submeter o RFPP depois que termino a atividade?
+
+- intent: info_pp_orientador
+  examples: |
+    - Como consigo um orientador para a PP?
+    - Preciso ter um professor orientador na Prática Profissional?
+    - O professor pode se recusar a me orientar na PP?
+    - Quem pode me orientar?
+
+- intent: info_pp_reprovacao
+  examples: |
+    - O que acontece se minha PP for indeferida?
+    - E se meu relatório da prática profissional for reprovado?
+    - Se eu não for aprovado na PP, posso defender o TCC?
+
+- intent: info_estagio_geral
+  examples: |
+    - O que é o estágio?
+    - Como funciona o estágio no IFPE Jaboatão?
+    - Me explique sobre o estágio.
+    - O estágio no campus é obrigatório?
+
+- intent: info_estagio_requisitos_aluno
+  examples: |
+    - Quem pode estagiar?
+    - Quais são os requisitos para ser estagiário?
+    - Preciso ter quantos anos para começar a estagiar?
+    - O que eu preciso para poder fazer um estágio?
+
+- intent: info_estagio_remuneracao
+  examples: |
+    - O estágio é remunerado?
+    - Tenho direito a receber bolsa no estágio?
+    - E o auxílio-transporte, é obrigatório?
+    - A empresa é obrigada a pagar pelo estágio?
+
+- intent: info_estagio_duracao_jornada
+  examples: |
+    - Qual a duração máxima do estágio?
+    - Por quanto tempo posso estagiar na mesma empresa?
+    - Quantas horas posso trabalhar por dia no estágio?
+    - Qual a carga horária semanal do estagiário?
+
+- intent: info_estagio_documentos_iniciar
+  examples: |
+    - Quais documentos preciso para começar o estágio?
+    - O que eu preciso entregar na CREE para iniciar o estágio?
+    - Que papéis são necessários antes de começar a estagiar?
+
+- intent: info_estagio_documentos_durante
+  examples: |
+    - O que preciso entregar durante o estágio?
+    - Tenho que entregar relatórios todo mês?
+    - Como é o acompanhamento do estágio?
+
+- intent: info_estagio_documentos_finalizar
+  examples: |
+    - Quais documentos preciso para terminar o estágio?
+    - O que eu entrego quando o estágio acaba?
+    - Como faço para concluir o estágio?
+
+- intent: info_estagio_interromper
+  examples: |
+    - Como faço para cancelar meu estágio?
+    - Quero sair do estágio, o que eu faço?
+    - É possível rescindir o contrato de estágio?
+
+- intent: info_estagio_prorrogar
+  examples: |
+    - Posso prorrogar meu estágio?
+    - Como faço para estender o tempo de estágio?
+    - O que é o termo aditivo do estágio?
+
+- intent: info_estagio_vs_pp
+  examples: |
+    - O estágio conta como prática profissional?
+    - Se eu fizer estágio, preciso fazer a disciplina de prática profissional?
+    - O estágio elimina a PP?
+
+- intent: despedida
+  examples: |
+    - Tchau
+    - Adeus
+    - Até mais
+    - Fim
+    - Encerrar
+    - Tenha um bom dia
+    - Estou indo
+    - Já vou
+    - Obrigada, é tudo por agora
+    - Concluí
+    - Nada mais
+    - Chega
+    - Flw

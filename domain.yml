@@ -78,29 +78,85 @@ intents:
   - proibido_facilitar_entrada_perigo
   - regime_disciplinar_discente
   - representantes_turmas
+  - info_tcc_geral
+  - info_tcc_formatos
+  - info_tcc_apresentacao
+  - info_tcc_nota_reprovacao
+  - info_tcc_disciplinas_auxiliares
+  - info_tcc_quando_iniciar
+  - info_tcc_documentos
+  - info_tcc_obrigatoriedade
+  - info_niveis_ensino
+  - info_matricula_dependencia
+  - info_matricula_vinculo
+  - info_trancamento_matricula
+  - info_criterio_aprovacao
+  - info_exame_final
+  - info_jubilamento
+  - info_reintegracao
+  - ask_orientador_area
+  - list_areas_pesquisa
+  - ask_orientador_area_computacao_em_nuvem
+  - ask_orientador_area_inteligencia_artificial
+  - ask_orientador_area_internet_do_futuro
+  - ask_orientador_area_seguranca_da_informacao
+  - ask_orientador_area_engenharia_de_software
+  - ask_orientador_area_ciencia_de_dados
+  - ask_orientador_area_informatica_para_educacao
+  - ask_orientador_area_sistemas_web
+  - ask_orientador_area_sistemas_embarcados
+  - ask_orientador_area_banco_de_dados
+  - ask_orientador_area_mineracao_de_dados
+  - ask_orientador_area_interacao_humano_computador
+  - ask_orientador_area_educacao_em_computacao
+  - ask_orientador_area_informatica_na_educacao
+  - ask_orientador_area_genero_e_computacao
+  - info_pp_geral
+  - info_pp_requisitos
+  - info_pp_modalidades
+  - info_pp_documentos_necessarios
+  - info_pp_prazos
+  - info_pp_orientador
+  - info_pp_reprovacao
+  - info_estagio_geral
+  - info_estagio_requisitos_aluno
+  - info_estagio_remuneracao
+  - info_estagio_duracao_jornada
+  - info_estagio_documentos_iniciar
+  - info_estagio_documentos_durante
+  - info_estagio_documentos_finalizar
+  - info_estagio_interromper
+  - info_estagio_prorrogar
+  - info_estagio_vs_pp
+  - reformular
+  - default
+  - despedida
+
+entities:
+  - area_pesquisa
 
 responses:
   utter_saudar:
-  - text: "Oi, meu nome é Lucas, serei seu assistente. Como posso ajudar?"
-  - text: "E aí, meu nome é Lucas, no que eu posso te ajudar?"
+    - text: "Oi, meu nome é Lucas, serei seu assistente. Como posso ajudar?"
+    - text: "E aí, meu nome é Lucas, no que eu posso te ajudar?"
 
   utter_sobre:
-  - text: "Me chamo Lucas, sou o assistente virtual do campus. Fui criado por Lucas Lourenço com a orientação do professor Luciano Cabral para ajudar fornecendo informações úteis de forma simples e intuitiva."
+    - text: "Me chamo Lucas, sou o assistente virtual do campus. Fui criado por Lucas Lourenço com a orientação do professor Luciano Cabral para ajudar fornecendo informações úteis de forma simples e intuitiva."
 
   utter_afirmacao:
-  - text: "Ótimo! Até a próxima."
+    - text: "Ótimo! Até a próxima."
 
   utter_negacao:
-  - text: "O que você quer saber?"
+    - text: "O que você quer saber?"
 
   utter_agradecimento:
-  - text: "Por nada, é um prazer ajudar!"
+    - text: "Por nada, é um prazer ajudar!"
 
   utter_email_direcao:
-  - text: "O email da direção de ensino é: den@jaboatao.ifpe.edu.br, isso te ajudou?"
+    - text: "O email da direção de ensino é: den@jaboatao.ifpe.edu.br, isso te ajudou?"
 
   utter_contatos:
-  - text: "DIREÇÃO DE ENSINO - den@jaboatao.ifpe.edu.br
+    - text: "DIREÇÃO DE ENSINO - den@jaboatao.ifpe.edu.br
       DIVISÃO DE PESQUISA E EXTENSÃO - dpex@jaboatao.ifpe.edu.br
       COORDENAÇÃO DO TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - coordenacao.ads@jaboatao.ifpe.edu.br
       COORDENAÇÃO DO TÉCNICO EM INFORMÁTICA PARA INTERNET - cipi@jaboatao.ifpe.edu.br
@@ -108,21 +164,21 @@ responses:
       COORDENAÇÃO DO TÉCNICO EM ADMINISTRAÇÃO - 
       COORDENAÇÃO DO TÉCNICO EM COMÉRCIO - 
       CRADT (Secretaria) - atendimento.secretaria@jaboatao.ifpe.edu.br
-      BIBLIOTECA  - biblioteca@jaboatao.ifpe.edu.br
+      BIBLIOTECA - biblioteca@jaboatao.ifpe.edu.br
       COORDENADORIA DE RELAÇÕES EMPRESARIAIS, ESTÁGIOS E EGRESSOS - cree@jaboatao.ifpe.edu.br 
       COORDENADORIA DE MONITORIA - monitoria@jaboatao.ifpe.edu.br 
       DIVISÃO DE ASSISTÊNCIA AO ENSINO E AO ESTUDANTE - daee@jaboatao.ifpe.edu.br
       Sobre Carteira Estudantil: carteiraestudante@jaboatao.ifpe.edu.br 
       COORDENADORIA DE PSICOLOGIA - anamelia.mello@jaboatao.ifpe.edu.br
-      PEDAGOGAS- adriana.assis@jaboatao.ifpe.edu.br  e graciele.gomes@jaboatao.ifpe.edu.br
+      PEDAGOGAS- adriana.assis@jaboatao.ifpe.edu.br e graciele.gomes@jaboatao.ifpe.edu.br
       ASSESSORIA DE COMUNICAÇÃO - ascom@jaboatao.ifpe.edu.br
       Fonte: https://sites.google.com/jaboatao.ifpe.edu.br/ensino/nossos-contatos"
 
   utter_div_pesquisa:
-  - text: "O e-mail da Divisão de Pesquisa e extensão é: dpex@jaboatao.ifpe.edu.br"
+    - text: "O e-mail da Divisão de Pesquisa e extensão é: dpex@jaboatao.ifpe.edu.br"
 
   utter_coord_ads:
-  - text: "O e-mail da coordenação do curso de Tecnologia em Análise e Desenvolvimento de Sistemas é: ads@jaboatao.ifpe.edu.br"
+    - text: "O e-mail da coordenação do curso de Tecnologia em Análise e Desenvolvimento de Sistemas é: ads@jaboatao.ifpe.edu.br"
 
   utter_primeiro_acesso_qacademico:
     - text: "Para o primeiro acesso ou recuperação de senha do QAcademico, acesse [https://qacademico.ifpe.edu.br/](https://qacademico.ifpe.edu.br/). Vá no menu 'Aluno' e depois clique em 'Primeiro acesso e recuperação de senha'. A senha será enviada para o e-mail cadastrado na matrícula."
@@ -170,7 +226,7 @@ responses:
 
   utter_feriado:
     - text: "Alguns feriados importantes em 2025 são: Tiradentes em 21 de abril, Dia do Trabalhador em 1º de maio, São João em 24 de junho, Dia da Independência do Brasil em 7 de setembro, Proclamação da República em 15 de novembro, Consciência Negra em 20 de novembro, e Natal em 25 de dezembro." 
-    - text: "Em abril, temos Recesso de Semana Santa (17 e 18) e Feriado Nacional de Tiradentes (21). Em maio, o Dia do Trabalhador (1º) é feriado.  Junho, Recesso Junino (23) e Feriado de São João (24). Em setembro, Feriado do Dia da Independência (7). Em outubro, Feriado de Nossa Senhora Aparecida (12). Em novembro, Feriado da Proclamação da República (15) e Consciência Negra (20). Em dezembro, Recesso Natalino (24) e Feriado de Natal (25). Em janeiro de 2026, Confraternização Universal (1º)."
+    - text: "Em abril, temos Recesso de Semana Santa (17 e 18) e Feriado Nacional de Tiradentes (21). Em maio, o Dia do Trabalhador (1º) é feriado. Junho, Recesso Junino (23) e Feriado de São João (24). Em setembro, Feriado do Dia da Independência (7). Em outubro, Feriado de Nossa Senhora Aparecida (12). Em novembro, Feriado da Proclamação da República (15) e Consciência Negra (20). Em dezembro, Recesso Natalino (24) e Feriado de Natal (25). Em janeiro de 2026, Confraternização Universal (1º)."
 
   utter_avaliacoes_unidades:
     - text: "O período de avaliações da 1ª unidade é de 12 a 17 de maio, com término da unidade em 24 de maio e prazo final para publicação de notas no Q-Acadêmico em 26 de maio. A 2ª unidade tem período de avaliações de 14 a 18 de julho e término em 29 de julho, com prazo final para notas em 30 de julho. O término da 3ª unidade do Ensino Médio é em 18 de outubro, com prazo final para publicação de notas no Q-Acadêmico no mesmo dia. O término da 4ª unidade é em 29 de dezembro, e o ano letivo termina em 30 de dezembro, com prazo final para publicação das notas no Q-Acadêmico." 
@@ -179,7 +235,7 @@ responses:
     - text: "Os Conselhos de Classe da 1ª Unidade são de 9 a 13 de junho. Os Conselhos de Classe da 2ª Unidade são em 30 e 31 de julho, e 1º de agosto. O Conselho de Classe do Ensino Médio para a 3ª Unidade é de 3 a 5 de novembro. Os Conselhos de Classe do 4º Período são em 8 e 9 de janeiro de 2026." 
 
   utter_semanas_especiais:
-    - text: "Algumas semanas e datas especiais incluem: Semana de Conscientização do Autismo (1 a 4 de abril), Semana dos Povos Originários (14 a 16 de abril), Semana de Administração e Tecnologia da Informação (9 a 13 de junho), Dia Internacional do Orgulho LGBTQIA+ (28 de junho), Dia da Mulher Negra Latinoamericana e Caribenha (25 de julho), Dia da Pessoa com Deficiência (21 de setembro),  Nacional de Ciência e Tecnologia (13 a 17 de outubro), Semana da Consciência Negra (17 a 21 de novembro), e Semana de Arte e Cultura (8 a 12 de dezembro)."
+    - text: "Algumas semanas e datas especiais incluem: Semana de Conscientização do Autismo (1 a 4 de abril), Semana dos Povos Originários (14 a 16 de abril), Semana de Administração e Tecnologia da Informação (9 a 13 de junho), Dia Internacional do Orgulho LGBTQIA+ (28 de junho), Dia da Mulher Negra Latinoamericana e Caribenha (25 de julho), Dia da Pessoa com Deficiência (21 de setembro), Nacional de Ciência e Tecnologia (13 a 17 de outubro), Semana da Consciência Negra (17 a 21 de novembro), e Semana de Arte e Cultura (8 a 12 de dezembro)."
 
   utter_provas_finais:
     - text: "As Provas Finais ocorrem de 2 a 7 de janeiro de 2026. O prazo final para publicação das notas dos Exames Finais é 7 de janeiro de 2026." 
@@ -342,6 +398,191 @@ responses:
   utter_representantes_turmas:
     - text: "Será escolhido um estudante representante para cada turma no início do período letivo, com o objetivo de fortalecer o processo pedagógico e a interação dos estudantes com a Instituição. Ao representante da turma caberá representar sua turma junto à comunidade acadêmica e participar das atividades relacionadas ao ensino-aprendizagem que envolvam a turma como um todo."
 
+  utter_info_tcc_geral:
+    - text: "O Trabalho de Conclusão de Curso (TCC) é um componente curricular obrigatório que você desenvolve com a orientação de um docente, abordando um tema relacionado ao seu curso."
+
+  utter_info_tcc_formatos:
+    - text: "Você pode apresentar seu TCC em diferentes formatos: monografia, artigo científico, relatório analítico de pesquisa ou projeto."
+
+  utter_info_tcc_apresentacao:
+    - text: "A apresentação do TCC ocorre em uma sessão solene e pública. Você fará uma exposição oral do seu trabalho para uma Banca Examinadora que irá te avaliar."
+
+  utter_info_tcc_nota_reprovacao:
+    - text: "Para ser aprovado, você precisa de uma nota igual ou superior a 7. Se a nota for menor, você estará reprovado e terá um semestre letivo para desenvolver e apresentar um novo trabalho."
+
+  utter_info_tcc_disciplinas_auxiliares:
+    - text: "Sim! As disciplinas de Metodologia Científica, Introdução ao TCC e Metodologia da Pesquisa Aplicada são projetadas para te auxiliar no processo de elaboração do TCC."
+
+  utter_info_tcc_quando_iniciar:
+    - text: "É recomendado que você comece o TCC o mais breve possível. O ideal é iniciar a elaboração no terceiro período, aproveitando disciplinas como Metodologia Científica."
+
+  utter_info_tcc_documentos:
+    - text: "Existem vários documentos de apoio, como o Regulamento do TCC (Resolução nº 195/2023), modelos para artigo e monografia, e a declaração do orientador. Eles geralmente ficam disponíveis na página do curso."
+
+  utter_info_tcc_obrigatoriedade:
+    - text: "Sim, o TCC é um componente curricular obrigatório. A conclusão do curso e a obtenção do diploma dependem da sua aprovação no TCC."
+
+  utter_info_niveis_ensino:
+    - text: "O IFPE oferece Educação Profissional Técnica de Nível Médio (Integrado, Subsequente), Cursos de Formação Inicial e Continuada (FIC), Educação Superior (Tecnologia, Licenciatura, Bacharelado) e Pós-Graduação (Especialização, Mestrado e Doutorado). Essas modalidades podem ser ofertadas de forma presencial ou a distância."
+
+  utter_info_matricula_dependencia:
+    - text: "Se você for reprovado em até 3 componentes curriculares (matérias) cumulativamente, poderá se matricular no período seguinte. Você deverá cursar as matérias em que não foi aprovado em regime de dependência. Se a reprovação for em mais de 3 matérias, você não poderá avançar para o período seguinte, devendo cursar apenas as dependências."
+
+  utter_info_matricula_vinculo:
+    - text: "A matrícula vínculo é uma modalidade para o estudante que já cursou todos os componentes curriculares, mas ainda precisa concluir o Estágio Supervisionado ou o Trabalho de Conclusão de Curso (TCC)Você deve solicitar essa matrícula para manter seu vínculo com a instituição enquanto finaliza essas atividades, respeitando o prazo máximo de conclusão do curso."
+
+  utter_info_trancamento_matricula:
+    - text: "Você pode solicitar o trancamento de matrícula do curso por um prazo que não ultrapasse 2 anos, de forma contínua ou alternada. O pedido deve ser feito no período definido no Calendário Acadêmico. Alunos do primeiro período/módulo/série não têm direito ao trancamento, salvo exceções previstas em lei ou autorizadas pela Direção Geral. Se você não reabrir a matrícula após o prazo máximo, seu vínculo com o curso é desfeito."
+
+  utter_info_criterio_aprovacao:
+    - text: "Os critérios de aprovação são:
+      - **Cursos Superiores:** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 7,0.
+      - **Cursos Técnicos (Subsequente):** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 6,0.
+      - **Cursos Técnicos (Integrado ao Ensino Médio):** Frequência de no mínimo 75% na carga horária total do período e média igual ou superior a 6,0 em cada matéria."
+
+  utter_info_exame_final:
+    - text: "Tem direito ao exame final o estudante que não atingiu a média para aprovação, mas obteve a frequência mínima exigida (75%) e média de no mínimo 2,0. A média final, após o exame, é calculada pela soma da média das avaliações do período com a nota do exame final, dividida por dois. Para ser aprovado, essa nova média deve ser igual ou superior a 6,0."
+
+  utter_info_jubilamento:
+    - text: "Jubilamento é o desligamento do estudante da instituição quando ele ultrapassa o prazo máximo para concluir o curso. Para a maioria dos cursos, o prazo máximo é o dobro do prazo mínimo de duração. O tempo em que a matrícula esteve trancada não conta para o jubilamento."
+
+  utter_info_reintegracao:
+    - text: "O estudante que perdeu o vínculo por abandono de curso (deixou de renovar a matrícula) pode solicitar a reintegração. O pedido é condicionado à existência de vagas e à possibilidade de concluir o curso dentro do prazo máximo de integralização. A solicitação é analisada e pode ser concedida apenas uma vez."
+  
+  utter_list_areas_pesquisa:
+    - text: "Os professores orientam nas seguintes áreas de pesquisa: Computação em Nuvem, Inteligência Artificial, Internet do Futuro, Segurança da Informação, Engenharia de Software, Ciência de Dados, Informática para Educação, Sistemas Web, Sistemas Embarcados, Banco de Dados, Mineração de Dados, Interação Humano-Computador, Educação em Computação, Informática na Educação e Gênero e Computação. Em qual delas você tem interesse?"
+
+  utter_area_computacao_em_nuvem:
+    - text: "Os seguintes professores orientam em Computação em Nuvem: Bruno Gentilini, Carlos José, Carlos Rezende, Diego dos Passos, Eric de Luna, Francisco do Nascimento, Josino Rodrigues, Luciano de Souza, Maria Carolina, Nilson Cândido, Roberto Luiz e Sérgio Torres."
+
+  utter_area_inteligencia_artificial:
+    - text: "Os professores que orientam em Inteligência Artificial são: Bruno Gentilini, Diego dos Passos, Havana Diogo e Luciano de Souza."
+
+  utter_area_internet_do_futuro:
+    - text: "Os professores que orientam em Internet do Futuro são: Bruno Gentilini e Sérgio Torres."
+
+  utter_area_seguranca_da_informacao:
+    - text: "Para Segurança da Informação, os orientadores são: Bruno Gentilini, Diego dos Passos e Luciano de Souza."
+
+  utter_area_engenharia_de_software:
+    - text: "Os professores que orientam em Engenharia de Software são: Carlos José, Carlos Rezende, Eric de Luna, Francisco do Nascimento, Josino Rodrigues, Maria Carolina, Nilson Cândido e Roberto Luiz."
+
+  utter_area_ciencia_de_dados:
+    - text: "A professora que orienta em Ciência de Dados é: Havana Diogo Alves Andrade."
+
+  utter_area_informatica_para_educacao:
+    - text: "A professora que orienta em Informática para Educação é: Havana Diogo Alves Andrade."
+
+  utter_area_sistemas_web:
+    - text: "A professora que orienta em Sistemas Web é: Havana Diogo Alves Andrade."
+
+  utter_area_sistemas_embarcados:
+    - text: "Os professores que orientam em Sistemas Embarcados são: Luciano de Souza e Sérgio Torres."
+
+  utter_area_banco_de_dados:
+    - text: "Para Banco de Dados, os orientadores são: Maria Carolina Torres Da Silva e Sérgio Torres de Santana."
+
+  utter_area_mineracao_de_dados:
+    - text: "A professora que orienta em Mineração de Dados é: Maria Carolina Torres Da Silva."
+
+  utter_area_interacao_humano_computador:
+    - text: "O professor que orienta em Interação Humano-Computador é: Pablo Henrique Spindola Tôrres."
+
+  utter_area_educacao_em_computacao:
+    - text: "A professora que orienta em Educação em Computação é: Viviane Cristina Oliveira Aureliano."
+
+  utter_area_informatica_na_educacao:
+    - text: "A professora que orienta em Informática na Educação é: Viviane Cristina Oliveira Aureliano."
+  
+  utter_area_genero_e_computacao:
+    - text: "A professora que orienta em Gênero e Computação é: Viviane Cristina Oliveira Aureliano."
+
+  utter_info_pp_geral:
+    - text: "A Prática Profissional (PP) é uma atividade obrigatória para obter o diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas. Ela funciona como um articulador entre ensino, pesquisa e extensão, sendo equiparada ao TCC e às Atividades Complementares."
+
+  utter_info_pp_requisitos:
+    - text: "Para concluir a Prática Profissional (PP), você precisa cumprir uma carga horária mínima de 200 horas e apresentar um Relatório Final da Prática Profissional (RFPP), que deve ser avaliado por um professor orientador. Toda a atividade também precisa do aval da Coordenação do Curso."
+
+  utter_info_pp_modalidades:
+    - text: "As atividades que valem como Prática Profissional (PP) são:
+      - Participação em projeto de pesquisa (bolsista ou voluntário)
+      - Participação em projeto de extensão (bolsista ou voluntário)
+      - Participação em monitoria (bolsista ou voluntário)
+      - Estágio na área de Informática
+      - Exercício profissional efetivo na área de Informática (empregado, sócio de empresa ou autônomo)"
+
+  utter_info_pp_documentos_necessarios:
+    - text: "Você deve entregar ao seu professor orientador o seu Relatório Final da Prática Profissional (RFPP) e toda a documentação que comprove as atividades realizadas. Além disso, o professor emitirá um parecer sobre seu relatório e sobre a documentação."
+
+  utter_info_pp_prazos:
+    - text: "Existem dois prazos principais:
+      - Você deve entregar toda a documentação da PP ao seu orientador no prazo máximo de 30 dias antes da sua defesa de TCC.
+      - Após concluir as atividades da PP, você tem um prazo de até 60 dias para apresentar o seu Relatório Final (RFPP)."
+
+  utter_info_pp_orientador:
+    - text: "Sim, você precisa de um professor orientador. Você pode solicitar à coordenação do curso a indicação de um orientador ou escolher um professor do quadro docente do campus. No entanto, o professor tem o direito de recusar o convite para a orientação."
+
+  utter_info_pp_reprovacao:
+    - text: "Se o seu Relatório Final da Prática Profissional (RFPP) for indeferido (reprovado), você não poderá apresentar o seu Trabalho de Conclusão de Curso (TCC). Consequentemente, a não conclusão da PP impede a sua participação na formatura."
+
+  utter_info_estagio_geral:
+    - text: "O estágio é um ato educativo escolar supervisionado no ambiente de trabalho, que prepara você para o mercado. No IFPE Campus Jaboatão dos Guararapes, o estágio é considerado não obrigatório para os cursos vigentes."
+
+  utter_info_estagio_requisitos_aluno:
+    - text: "Para ser estagiário, você precisa estar regularmente matriculado e com frequência regular no IFPE, e ter no mínimo 16 anos completos na data de início do estágio."
+
+  utter_info_estagio_remuneracao:
+    - text: "Sim. Para o estágio não obrigatório, que é o caso do nosso campus, é obrigatória a concessão de bolsa (ou outra forma de pagamento) e também do auxílio-transporte."
+
+  utter_info_estagio_duracao_jornada:
+    - text: "A duração do estágio na mesma empresa não pode ultrapassar dois anos, exceto para estagiários com deficiência. A jornada de trabalho para estudantes do ensino superior é de, no máximo, 6 horas diárias e 30 horas semanais."
+
+  utter_info_estagio_documentos_iniciar:
+    - text: "Antes de iniciar, você deve entregar à CREE (Coordenação de Relações Empresariais, Estágio e Egressos) os seguintes documentos:
+      - Comprovante de matrícula atualizado
+      - Horário de aulas atualizado
+      - 3 vias do Termo de Compromisso de Estágio
+      - 1 via do Plano de Atividades de Estágio
+      - Cópia da Apólice de Seguro contra acidentes pessoais"
+
+  utter_info_estagio_documentos_durante:
+    - text: "Durante o estágio, o acompanhamento é feito com dois documentos principais:
+      - Relatório de visita do orientador: seu professor orientador visitará o local do estágio a cada 3 meses e preencherá um relatório.
+      - Relatório Mensal de Atividades: você deve preencher este relatório todo mês, para ser avaliado e assinado pelo seu supervisor na empresa e pelo seu orientador no IFPE."
+
+  utter_info_estagio_documentos_finalizar:
+    - text: "Para concluir o estágio, você precisa providenciar os seguintes documentos:
+      - Termo de Realização do Estágio, preenchido e assinado pelo supervisor da empresa.
+      - Relatório Final de Estágio, elaborado por você.
+      - Ficha de avaliação do estágio - Estagiário (preenchida por você).
+      - Ficha de avaliação do estágio - Supervisor (preenchida pelo seu supervisor na empresa)."
+
+  utter_info_estagio_interromper:
+    - text: "Sim, o estágio pode ser encerrado a pedido de qualquer uma das partes (você, a empresa ou o IFPE). Para isso, é preciso formalizar o pedido preenchendo o Termo de Rescisão de Estágio e entregando-o na CREE."
+
+  utter_info_estagio_prorrogar:
+    - text: "Sim, o estágio pode ser prorrogado, desde que não ultrapasse o limite de dois anos na mesma empresa. Qualquer alteração no contrato, como tempo ou atividades, exige um Termo Aditivo."
+
+  utter_info_estagio_vs_pp:
+    - text: "Sim. Para o curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas, a carga horária do estágio não obrigatório pode ser usada para integralizar a carga horária da Prática Profissional (PP). Além do estágio, a PP também pode ser cumprida com atividades de monitoria, pesquisa e extensão."
+
+  utter_reformular:
+    - text: "Me desculpe, não entendi. Poderia reformular sua pergunta?"
+
+  utter_default:
+    - text: "Desculpe, não consegui entender sua pergunta. Poderia me perguntar de outra forma?"
+    - text: "Não entendi o que você quis dizer. Poderia explicar de outra forma?"
+    - text: "Poderia reformular sua pergunta? Não consegui compreender."
+    - text: "Desculpe, não consegui captar o que você quis dizer. Poderia tentar novamente?"
+
+  utter_despedida:
+    - text: "De nada! Se precisar de algo mais, é só chamar. Tenha um ótimo dia!"
+    - text: "Até logo! Se tiver mais dúvidas sobre o IFPE Campus Jaboatão, estou à disposição."
+    - text: "Certo! Fico feliz em ter ajudado. Se precisar de mais informações, pode perguntar."
+    - text: "Tchau! Sempre que precisar de ajuda com o calendário ou os primeiros passos, estarei aqui."
+    - text: "Até a próxima! Sucesso nos estudos no IFPE!"
+    - text: "Ok! Qualquer coisa, é só retornar. Um abraço!"
+  
 session_config:
-  session_expiration_time: 60
+  session_expiration_time_in_minutes: 60
   carry_over_slots_to_new_session: true

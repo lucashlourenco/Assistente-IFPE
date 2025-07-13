@@ -382,3 +382,259 @@ rules:
   steps:
     - intent: representantes_turmas
     - action: utter_representantes_turmas
+
+- rule: Responder sobre informações gerais do TCC
+  steps:
+  - intent: info_tcc_geral
+  - action: utter_info_tcc_geral
+
+- rule: Responder sobre formatos do TCC
+  steps:
+  - intent: info_tcc_formatos
+  - action: utter_info_tcc_formatos
+
+- rule: Responder sobre apresentação do TCC
+  steps:
+  - intent: info_tcc_apresentacao
+  - action: utter_info_tcc_apresentacao
+
+- rule: Responder sobre nota e reprovação no TCC
+  steps:
+  - intent: info_tcc_nota_reprovacao
+  - action: utter_info_tcc_nota_reprovacao
+
+- rule: Responder sobre disciplinas de auxílio ao TCC
+  steps:
+  - intent: info_tcc_disciplinas_auxiliares
+  - action: utter_info_tcc_disciplinas_auxiliares
+
+- rule: Responder sobre quando iniciar o TCC
+  steps:
+  - intent: info_tcc_quando_iniciar
+  - action: utter_info_tcc_quando_iniciar
+
+- rule: Responder sobre documentos do TCC
+  steps:
+  - intent: info_tcc_documentos
+  - action: utter_info_tcc_documentos
+
+- rule: Responder sobre obrigatoriedade do TCC
+  steps:
+  - intent: info_tcc_obrigatoriedade
+  - action: utter_info_tcc_obrigatoriedade
+
+- rule: Responder sobre níveis de ensino
+  steps:
+  - intent: info_niveis_ensino
+  - action: utter_info_niveis_ensino
+
+- rule: Responder sobre matrícula em dependência
+  steps:
+  - intent: info_matricula_dependencia
+  - action: utter_info_matricula_dependencia
+
+- rule: Responder sobre matrícula vínculo
+  steps:
+  - intent: info_matricula_vinculo
+  - action: utter_info_matricula_vinculo
+
+- rule: Responder sobre trancamento de matrícula
+  steps:
+  - intent: info_trancamento_matricula
+  - action: utter_info_trancamento_matricula
+
+- rule: Responder sobre critérios de aprovação
+  steps:
+  - intent: info_criterio_aprovacao
+  - action: utter_info_criterio_aprovacao
+
+- rule: Responder sobre exame final
+  steps:
+  - intent: info_exame_final
+  - action: utter_info_exame_final
+
+- rule: Responder sobre jubilamento
+  steps:
+  - intent: info_jubilamento
+  - action: utter_info_jubilamento
+
+- rule: Responder sobre reintegração
+  steps:
+  - intent: info_reintegracao
+  - action: utter_info_reintegracao
+
+- rule: Responder sobre todas as áreas de pesquisa
+  steps:
+  - intent: list_areas_pesquisa
+  - action: utter_list_areas_pesquisa
+
+- rule: Responder sobre área de Computação em Nuvem
+  steps:
+  - intent: ask_orientador_area_computacao_em_nuvem
+  - action: utter_area_computacao_em_nuvem
+
+- rule: Responder sobre área de Inteligência Artificial
+  steps:
+  - intent: ask_orientador_area_inteligencia_artificial
+  - action: utter_area_inteligencia_artificial
+
+- rule: Responder sobre área de Internet do Futuro
+  steps:
+  - intent: ask_orientador_area_internet_do_futuro
+  - action: utter_area_internet_do_futuro
+
+- rule: Responder sobre área de Segurança da Informação
+  steps:
+  - intent: ask_orientador_area_seguranca_da_informacao
+  - action: utter_area_seguranca_da_informacao
+
+- rule: Responder sobre área de Engenharia de Software
+  steps:
+  - intent: ask_orientador_area_engenharia_de_software
+  - action: utter_area_engenharia_de_software
+
+- rule: Responder sobre área de Ciência de Dados
+  steps:
+  - intent: ask_orientador_area_ciencia_de_dados
+  - action: utter_area_ciencia_de_dados
+
+- rule: Responder sobre área de Informática para Educação
+  steps:
+  - intent: ask_orientador_area_informatica_para_educacao
+  - action: utter_area_informatica_para_educacao
+
+- rule: Responder sobre área de Sistemas Web
+  steps:
+  - intent: ask_orientador_area_sistemas_web
+  - action: utter_area_sistemas_web
+
+- rule: Responder sobre área de Sistemas Embarcados
+  steps:
+  - intent: ask_orientador_area_sistemas_embarcados
+  - action: utter_area_sistemas_embarcados
+
+- rule: Responder sobre área de Banco de Dados
+  steps:
+  - intent: ask_orientador_area_banco_de_dados
+  - action: utter_area_banco_de_dados
+
+- rule: Responder sobre área de Mineração de Dados
+  steps:
+  - intent: ask_orientador_area_mineracao_de_dados
+  - action: utter_area_mineracao_de_dados
+
+- rule: Responder sobre área de Interação Humano-Computador
+  steps:
+  - intent: ask_orientador_area_interacao_humano_computador
+  - action: utter_area_interacao_humano_computador
+
+- rule: Responder sobre área de Educação em Computação
+  steps:
+  - intent: ask_orientador_area_educacao_em_computacao
+  - action: utter_area_educacao_em_computacao
+
+- rule: Responder sobre área de Informática na Educação
+  steps:
+  - intent: ask_orientador_area_informatica_na_educacao
+  - action: utter_area_informatica_na_educacao
+
+- rule: Responder sobre área de Gênero e Computação
+  steps:
+  - intent: ask_orientador_area_genero_e_computacao
+  - action: utter_area_genero_e_computacao
+
+- rule: Responder sobre informações gerais da PP
+  steps:
+  - intent: info_pp_geral
+  - action: utter_info_pp_geral
+
+- rule: Responder sobre requisitos da PP
+  steps:
+  - intent: info_pp_requisitos
+  - action: utter_info_pp_requisitos
+
+- rule: Responder sobre modalidades da PP
+  steps:
+  - intent: info_pp_modalidades
+  - action: utter_info_pp_modalidades
+
+- rule: Responder sobre documentos da PP
+  steps:
+  - intent: info_pp_documentos_necessarios
+  - action: utter_info_pp_documentos_necessarios
+
+- rule: Responder sobre prazos da PP
+  steps:
+  - intent: info_pp_prazos
+  - action: utter_info_pp_prazos
+
+- rule: Responder sobre orientador da PP
+  steps:
+  - intent: info_pp_orientador
+  - action: utter_info_pp_orientador
+
+- rule: Responder sobre reprovação na PP
+  steps:
+  - intent: info_pp_reprovacao
+  - action: utter_info_pp_reprovacao
+
+- rule: Responder sobre informações gerais do estágio
+  steps:
+  - intent: info_estagio_geral
+  - action: utter_info_estagio_geral
+
+- rule: Responder sobre requisitos para ser estagiário
+  steps:
+  - intent: info_estagio_requisitos_aluno
+  - action: utter_info_estagio_requisitos_aluno
+
+- rule: Responder sobre remuneração do estágio
+  steps:
+  - intent: info_estagio_remuneracao
+  - action: utter_info_estagio_remuneracao
+
+- rule: Responder sobre duração e jornada do estágio
+  steps:
+  - intent: info_estagio_duracao_jornada
+  - action: utter_info_estagio_duracao_jornada
+
+- rule: Responder sobre documentos para iniciar estágio
+  steps:
+  - intent: info_estagio_documentos_iniciar
+  - action: utter_info_estagio_documentos_iniciar
+
+- rule: Responder sobre documentos durante o estágio
+  steps:
+  - intent: info_estagio_documentos_durante
+  - action: utter_info_estagio_documentos_durante
+
+- rule: Responder sobre documentos para finalizar o estágio
+  steps:
+  - intent: info_estagio_documentos_finalizar
+  - action: utter_info_estagio_documentos_finalizar
+
+- rule: Responder sobre como interromper o estágio
+  steps:
+  - intent: info_estagio_interromper
+  - action: utter_info_estagio_interromper
+
+- rule: Responder sobre como prorrogar o estágio
+  steps:
+  - intent: info_estagio_prorrogar
+  - action: utter_info_estagio_prorrogar
+
+- rule: Responder sobre a relação do estágio com a prática profissional
+  steps:
+  - intent: info_estagio_vs_pp
+  - action: utter_info_estagio_vs_pp
+
+- rule: Reformular pergunta
+  steps:
+  - intent: nlu_fallback
+  - action: utter_reformular
+
+- rule: Se despedir
+  steps:
+    - intent: despedida
+    - action: utter_despedida
+

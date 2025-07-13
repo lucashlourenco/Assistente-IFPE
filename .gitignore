@@ -1,0 +1,34 @@
+# Arquivos de modelo do RASA
+models/
+
+# Cache do RASA e logs
+.rasa/
+results/
+.pytest_cache/
+rasa.db
+
+# Arquivos de log
+*.log
+
+# Ambiente Virtual (se estiver dentro da pasta do projeto)
+venv/
+/venv/
+.venv/
+/.venv/
+env/
+/env/
+.env
+/.env
+
+# Arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Arquivos de dependências do Python
+*.egg-info/
