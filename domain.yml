@@ -155,24 +155,9 @@ responses:
   utter_email_direcao:
     - text: "O email da direção de ensino é: den@jaboatao.ifpe.edu.br, isso te ajudou?"
 
+
   utter_contatos:
-    - text: "DIREÇÃO DE ENSINO - den@jaboatao.ifpe.edu.br
-      DIVISÃO DE PESQUISA E EXTENSÃO - dpex@jaboatao.ifpe.edu.br
-      COORDENAÇÃO DO TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - coordenacao.ads@jaboatao.ifpe.edu.br
-      COORDENAÇÃO DO TÉCNICO EM INFORMÁTICA PARA INTERNET - cipi@jaboatao.ifpe.edu.br
-      COORDENAÇÃO DO TÉCNICO EM QUALIDADE - cctq@jaboatao.ifpe.edu.br
-      COORDENAÇÃO DO TÉCNICO EM ADMINISTRAÇÃO - 
-      COORDENAÇÃO DO TÉCNICO EM COMÉRCIO - 
-      CRADT (Secretaria) - atendimento.secretaria@jaboatao.ifpe.edu.br
-      BIBLIOTECA - biblioteca@jaboatao.ifpe.edu.br
-      COORDENADORIA DE RELAÇÕES EMPRESARIAIS, ESTÁGIOS E EGRESSOS - cree@jaboatao.ifpe.edu.br 
-      COORDENADORIA DE MONITORIA - monitoria@jaboatao.ifpe.edu.br 
-      DIVISÃO DE ASSISTÊNCIA AO ENSINO E AO ESTUDANTE - daee@jaboatao.ifpe.edu.br
-      Sobre Carteira Estudantil: carteiraestudante@jaboatao.ifpe.edu.br 
-      COORDENADORIA DE PSICOLOGIA - anamelia.mello@jaboatao.ifpe.edu.br
-      PEDAGOGAS- adriana.assis@jaboatao.ifpe.edu.br e graciele.gomes@jaboatao.ifpe.edu.br
-      ASSESSORIA DE COMUNICAÇÃO - ascom@jaboatao.ifpe.edu.br
-      Fonte: https://sites.google.com/jaboatao.ifpe.edu.br/ensino/nossos-contatos"
+    - text: "DIREÇÃO DE ENSINO - den@jaboatao.ifpe.edu.br\n DIVISÃO DE PESQUISA E EXTENSÃO - dpex@jaboatao.ifpe.edu.br\n COORDENAÇÃO DO TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - coordenacao.ads@jaboatao.ifpe.edu.br\n COORDENAÇÃO DO TÉCNICO EM INFORMÁTICA PARA INTERNET - cipi@jaboatao.ifpe.edu.br\nCOORDENAÇÃO DO TÉCNICO EM QUALIDADE - cctq@jaboatao.ifpe.edu.br\nCOORDENAÇÃO DO TÉCNICO EM ADMINISTRAÇÃO -\nCOORDENAÇÃO DO TÉCNICO EM COMÉRCIO -\nCRADT (Secretaria) - atendimento.secretaria@jaboatao.ifpe.edu.br\nBIBLIOTECA - biblioteca@jaboatao.ifpe.edu.br\nCOORDENADORIA DE RELAÇÕES EMPRESARIAIS, ESTÁGIOS E EGRESSOS - cree@jaboatao.ifpe.edu.br\nCOORDENADORIA DE MONITORIA - monitoria@jaboatao.ifpe.edu.br\nDIVISÃO DE ASSISTÊNCIA AO ENSINO E AO ESTUDANTE - daee@jaboatao.ifpe.edu.br\nSobre Carteira Estudantil: carteiraestudante@jaboatao.ifpe.edu.br\nCOORDENADORIA DE PSICOLOGIA - anamelia.mello@jaboatao.ifpe.edu.br\nPEDAGOGAS - adriana.assis@jaboatao.ifpe.edu.br e graciele.gomes@jaboatao.ifpe.edu.br\nASSESSORIA DE COMUNICAÇÃO - ascom@jaboatao.ifpe.edu.br\nFonte: https://sites.google.com/jaboatao.ifpe.edu.br/ensino/nossos-contatos"
 
   utter_div_pesquisa:
     - text: "O e-mail da Divisão de Pesquisa e extensão é: dpex@jaboatao.ifpe.edu.br"
@@ -435,10 +420,7 @@ responses:
     - text: "Você pode solicitar o trancamento de matrícula do curso por um prazo que não ultrapasse 2 anos, de forma contínua ou alternada. O pedido deve ser feito no período definido no Calendário Acadêmico. Alunos do primeiro período/módulo/série não têm direito ao trancamento, salvo exceções previstas em lei ou autorizadas pela Direção Geral. Se você não reabrir a matrícula após o prazo máximo, seu vínculo com o curso é desfeito."
 
   utter_info_criterio_aprovacao:
-    - text: "Os critérios de aprovação são:
-      - **Cursos Superiores:** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 7,0.
-      - **Cursos Técnicos (Subsequente):** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 6,0.
-      - **Cursos Técnicos (Integrado ao Ensino Médio):** Frequência de no mínimo 75% na carga horária total do período e média igual ou superior a 6,0 em cada matéria."
+    - text: "Os critérios de aprovação são:\n- **Cursos Superiores:** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 7,0.\n- **Cursos Técnicos (Subsequente):** Frequência de no mínimo 75% em cada matéria e média final igual ou superior a 6,0.\n- **Cursos Técnicos (Integrado ao Ensino Médio):** Frequência de no mínimo 75% na carga horária total do período e média igual ou superior a 6,0 em cada matéria."
 
   utter_info_exame_final:
     - text: "Tem direito ao exame final o estudante que não atingiu a média para aprovação, mas obteve a frequência mínima exigida (75%) e média de no mínimo 2,0. A média final, após o exame, é calculada pela soma da média das avaliações do período com a nota do exame final, dividida por dois. Para ser aprovado, essa nova média deve ser igual ou superior a 6,0."
@@ -504,20 +486,13 @@ responses:
     - text: "Para concluir a Prática Profissional (PP), você precisa cumprir uma carga horária mínima de 200 horas e apresentar um Relatório Final da Prática Profissional (RFPP), que deve ser avaliado por um professor orientador. Toda a atividade também precisa do aval da Coordenação do Curso."
 
   utter_info_pp_modalidades:
-    - text: "As atividades que valem como Prática Profissional (PP) são:
-      - Participação em projeto de pesquisa (bolsista ou voluntário)
-      - Participação em projeto de extensão (bolsista ou voluntário)
-      - Participação em monitoria (bolsista ou voluntário)
-      - Estágio na área de Informática
-      - Exercício profissional efetivo na área de Informática (empregado, sócio de empresa ou autônomo)"
+    - text: "As atividades que valem como Prática Profissional (PP) são:\n- Participação em projeto de pesquisa (bolsista ou voluntário)\n- Participação em projeto de extensão (bolsista ou voluntário)\n- Participação em monitoria (bolsista ou voluntário)\n- Estágio na área de Informática\n- Exercício profissional efetivo na área de Informática (empregado, sócio de empresa ou autônomo)"
 
   utter_info_pp_documentos_necessarios:
     - text: "Você deve entregar ao seu professor orientador o seu Relatório Final da Prática Profissional (RFPP) e toda a documentação que comprove as atividades realizadas. Além disso, o professor emitirá um parecer sobre seu relatório e sobre a documentação."
 
   utter_info_pp_prazos:
-    - text: "Existem dois prazos principais:
-      - Você deve entregar toda a documentação da PP ao seu orientador no prazo máximo de 30 dias antes da sua defesa de TCC.
-      - Após concluir as atividades da PP, você tem um prazo de até 60 dias para apresentar o seu Relatório Final (RFPP)."
+    - text: "Existem dois prazos principais:\n- Você deve entregar toda a documentação da PP ao seu orientador no prazo máximo de 30 dias antes da sua defesa de TCC.\n- Após concluir as atividades da PP, você tem um prazo de até 60 dias para apresentar o seu Relatório Final (RFPP)."
 
   utter_info_pp_orientador:
     - text: "Sim, você precisa de um professor orientador. Você pode solicitar à coordenação do curso a indicação de um orientador ou escolher um professor do quadro docente do campus. No entanto, o professor tem o direito de recusar o convite para a orientação."
@@ -538,24 +513,13 @@ responses:
     - text: "A duração do estágio na mesma empresa não pode ultrapassar dois anos, exceto para estagiários com deficiência. A jornada de trabalho para estudantes do ensino superior é de, no máximo, 6 horas diárias e 30 horas semanais."
 
   utter_info_estagio_documentos_iniciar:
-    - text: "Antes de iniciar, você deve entregar à CREE (Coordenação de Relações Empresariais, Estágio e Egressos) os seguintes documentos:
-      - Comprovante de matrícula atualizado
-      - Horário de aulas atualizado
-      - 3 vias do Termo de Compromisso de Estágio
-      - 1 via do Plano de Atividades de Estágio
-      - Cópia da Apólice de Seguro contra acidentes pessoais"
+    - text: "Antes de iniciar, você deve entregar à CREE (Coordenação de Relações Empresariais, Estágio e Egressos) os seguintes documentos:\n- Comprovante de matrícula atualizado\n- Horário de aulas atualizado\n- 3 vias do Termo de Compromisso de Estágio\n- 1 via do Plano de Atividades de Estágio\n- Cópia da Apólice de Seguro contra acidentes pessoais"
 
   utter_info_estagio_documentos_durante:
-    - text: "Durante o estágio, o acompanhamento é feito com dois documentos principais:
-      - Relatório de visita do orientador: seu professor orientador visitará o local do estágio a cada 3 meses e preencherá um relatório.
-      - Relatório Mensal de Atividades: você deve preencher este relatório todo mês, para ser avaliado e assinado pelo seu supervisor na empresa e pelo seu orientador no IFPE."
+    - text: "Durante o estágio, o acompanhamento é feito com dois documentos principais:\n- Relatório de visita do orientador: seu professor orientador visitará o local do estágio a cada 3 meses e preencherá um relatório.\n- Relatório Mensal de Atividades: você deve preencher este relatório todo mês, para ser avaliado e assinado pelo seu supervisor na empresa e pelo seu orientador no IFPE."
 
   utter_info_estagio_documentos_finalizar:
-    - text: "Para concluir o estágio, você precisa providenciar os seguintes documentos:
-      - Termo de Realização do Estágio, preenchido e assinado pelo supervisor da empresa.
-      - Relatório Final de Estágio, elaborado por você.
-      - Ficha de avaliação do estágio - Estagiário (preenchida por você).
-      - Ficha de avaliação do estágio - Supervisor (preenchida pelo seu supervisor na empresa)."
+    - text: "Para concluir o estágio, você precisa providenciar os seguintes documentos:\n- Termo de Realização do Estágio, preenchido e assinado pelo supervisor da empresa.\n- Relatório Final de Estágio, elaborado por você.\n- Ficha de avaliação do estágio - Estagiário (preenchida por você).\n- Ficha de avaliação do estágio - Supervisor (preenchida pelo seu supervisor na empresa)."
 
   utter_info_estagio_interromper:
     - text: "Sim, o estágio pode ser encerrado a pedido de qualquer uma das partes (você, a empresa ou o IFPE). Para isso, é preciso formalizar o pedido preenchendo o Termo de Rescisão de Estágio e entregando-o na CREE."
