@@ -78,7 +78,7 @@ sudo apt install -y python3-dev python3-pip python3-venv libatlas-base-dev libas
 ```
 
 ### Configuração
-1. Copie projeto para Pi. 
+1. Copie projeto para Pi.  
 2. `cd Assistente-IFPE`, crie venv: `python3 -m venv venv && source venv/bin/activate` 
 3. `pip install --upgrade pip && pip install -r requirements.txt` 
 
