@@ -12,7 +12,7 @@ Este projeto consiste em um assistente virtual com interface web animada em 3D e
 Para executar este projeto, você precisará de:
 
 1.  **Python 3.9** (Versão recomendada para compatibilidade com as dependências do projeto).
-2.  **Navegador Web Moderno** (Chrome, Edge, Firefox) com suporte a WebGL e permissão de microfone.
+2.  **Navegador Web Moderno** (Chrome, Edge, Firefox, etc) com suporte a WebGL e permissão de microfone.
 3.  **Conexão com a Internet** (O frontend carrega bibliotecas como Three.js, FontAwesome e VLibras via CDN).
 
 ---
